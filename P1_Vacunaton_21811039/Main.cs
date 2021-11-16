@@ -16,5 +16,25 @@ namespace P1_Vacunaton_21811039
         {
             InitializeComponent();
         }
+
+ 
+
+        private void Main_Load_1(object sender, EventArgs e)
+        {
+            try
+            {
+
+                Menu menu_ = new Menu();
+                menu_.MdiParent = this;
+                menu_.Show();
+
+            }
+            catch (Exception err)
+            {
+
+                MessageBox.Show(err.Message);
+
+            }
+        }
     }
 }
