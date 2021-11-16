@@ -15,11 +15,20 @@ namespace P1_Vacunaton_21811039
         public Menu()
         {
             InitializeComponent();
+            button1.Enabled = false;
+            button1.Visible = false;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             MessageBox.Show("HOLA MUNDO!!");
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

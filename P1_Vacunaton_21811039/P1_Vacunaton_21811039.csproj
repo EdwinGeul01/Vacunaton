@@ -99,6 +99,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="resources\Webp.net-resizeimage.png" />
+    <None Include="resources\Sample_User_Icon.png" />
     <None Include="resources\bubbling-black.gif" />
     <None Include="resources\heartbeat-pulse.gif" />
     <Content Include="resources\pintura.png" />
