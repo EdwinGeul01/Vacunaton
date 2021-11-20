@@ -63,9 +63,69 @@ namespace P1_Vacunaton_21811039.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _360_3608025_frame_bottom_2_1475_graphic_design {
+            get {
+                object obj = ResourceManager.GetObject("360-3608025_frame-bottom-2-1475-graphic-design", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bubbling_black {
             get {
                 object obj = ResourceManager.GetObject("bubbling-black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap centros_de_asistencia_ {
+            get {
+                object obj = ResourceManager.GetObject("centros de asistencia ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ciudadanosR {
+            get {
+                object obj = ResourceManager.GetObject("ciudadanosR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap consultaR {
+            get {
+                object obj = ResourceManager.GetObject("consultaR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap de8457d33abf1c91b48fe4043182cbcd {
+            get {
+                object obj = ResourceManager.GetObject("de8457d33abf1c91b48fe4043182cbcd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap frame {
+            get {
+                object obj = ResourceManager.GetObject("frame", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,6 +143,26 @@ namespace P1_Vacunaton_21811039.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logoname {
+            get {
+                object obj = ResourceManager.GetObject("logoname", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ruser {
+            get {
+                object obj = ResourceManager.GetObject("ruser", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sample_User_Icon {
             get {
                 object obj = ResourceManager.GetObject("Sample_User_Icon", resourceCulture);
@@ -93,9 +173,39 @@ namespace P1_Vacunaton_21811039.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Webp_net_resizeimage {
+        internal static System.Drawing.Bitmap tools {
             get {
-                object obj = ResourceManager.GetObject("Webp.net-resizeimage", resourceCulture);
+                object obj = ResourceManager.GetObject("tools", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap users_resize {
+            get {
+                object obj = ResourceManager.GetObject("users resize", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vacunas {
+            get {
+                object obj = ResourceManager.GetObject("vacunas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Webp1 {
+            get {
+                object obj = ResourceManager.GetObject("Webp1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -15,9 +15,8 @@ namespace P1_Vacunaton_21811039
         public Menu()
         {
             InitializeComponent();
-            button1.Enabled = false;
-            button1.Visible = false;
-
+            //button1.Enabled = false;
+            //button1.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,5 +29,7 @@ namespace P1_Vacunaton_21811039
         {
 
         }
+
+
     }
 }

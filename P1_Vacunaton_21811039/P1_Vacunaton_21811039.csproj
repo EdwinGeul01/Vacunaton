@@ -77,18 +77,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -99,10 +99,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="resources\Webp.net-resizeimage.png" />
+    <None Include="resources\vacunas.png" />
+    <None Include="resources\tools.png" />
+    <None Include="resources\ruser.png" />
+    <None Include="resources\Webp.net-resizeimage.gif" />
+    <None Include="resources\users resize.png" />
+    <None Include="resources\users.png" />
     <None Include="resources\Sample_User_Icon.png" />
     <None Include="resources\bubbling-black.gif" />
     <None Include="resources\heartbeat-pulse.gif" />
+    <None Include="resources\de8457d33abf1c91b48fe4043182cbcd.gif" />
+    <None Include="resources\360-3608025_frame-bottom-2-1475-graphic-design.png" />
+    <None Include="resources\frame.png" />
+    <None Include="resources\logoname.png" />
+    <None Include="resources\centros de asistencia .png" />
+    <None Include="resources\ciudadanosR.png" />
+    <None Include="resources\consultaR.png" />
     <Content Include="resources\pintura.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

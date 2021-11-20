@@ -30,40 +30,149 @@ namespace P1_Vacunaton_21811039
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MainBar = new System.Windows.Forms.Panel();
+            this.panel_user = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel_user.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.AllowMerge = false;
-            this.menuStrip1.AutoSize = false;
+            this.menuStrip1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.menuStrip1.Enabled = false;
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(0);
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(960, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(0);
+            this.menuStrip1.Size = new System.Drawing.Size(950, 24);
+            this.menuStrip1.Stretch = false;
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.Visible = false;
+            // 
+            // MainBar
+            // 
+            this.MainBar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MainBar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.MainBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MainBar.ForeColor = System.Drawing.Color.Transparent;
+            this.MainBar.Location = new System.Drawing.Point(190, 0);
+            this.MainBar.Margin = new System.Windows.Forms.Padding(0);
+            this.MainBar.Name = "MainBar";
+            this.MainBar.Size = new System.Drawing.Size(760, 26);
+            this.MainBar.TabIndex = 4;
+            this.MainBar.Paint += new System.Windows.Forms.PaintEventHandler(this.MainBar_Paint);
+            this.MainBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainBar_MouseDown);
+            this.MainBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainBar_MouseMove);
+            this.MainBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MainBar_MouseUp);
+            // 
+            // panel_user
+            // 
+            this.panel_user.BackColor = System.Drawing.Color.Gray;
+            this.panel_user.Controls.Add(this.label4);
+            this.panel_user.Controls.Add(this.button6);
+            this.panel_user.Controls.Add(this.label3);
+            this.panel_user.Controls.Add(this.label2);
+            this.panel_user.Controls.Add(this.label1);
+            this.panel_user.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_user.Location = new System.Drawing.Point(0, 0);
+            this.panel_user.Margin = new System.Windows.Forms.Padding(0);
+            this.panel_user.Name = "panel_user";
+            this.panel_user.Size = new System.Drawing.Size(190, 596);
+            this.panel_user.TabIndex = 6;
+            // 
+            // button6
+            // 
+            this.button6.BackgroundImage = global::P1_Vacunaton_21811039.Properties.Resources.tools;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(142, 460);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(32, 30);
+            this.button6.TabIndex = 4;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(37, 170);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(129, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "TIPO DE USUARIO : ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(37, 142);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(124, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "NOMBRE DE USUARIO";
+            // 
+            // label1
+            // 
+            this.label1.Image = global::P1_Vacunaton_21811039.Properties.Resources.ruser;
+            this.label1.Location = new System.Drawing.Point(39, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 104);
+            this.label1.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(16, 469);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(120, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "OPCIONES DE PERFIL";
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(960, 577);
+            this.BackColor = System.Drawing.Color.SlateGray;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(950, 596);
+            this.Controls.Add(this.MainBar);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.panel_user);
             this.ForeColor = System.Drawing.Color.Gray;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Main";
             this.Text = "Main";
             this.Load += new System.EventHandler(this.Main_Load_1);
+            this.panel_user.ResumeLayout(false);
+            this.panel_user.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.Panel MainBar;
+        private System.Windows.Forms.Panel panel_user;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
     }
 }
