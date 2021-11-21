@@ -12,24 +12,32 @@ namespace P1_Vacunaton_21811039
 {
     public partial class Menu : Form
     {
-        public Menu()
+        Main m;
+        public Menu(Main m )
         {
+            this.m = m;
             InitializeComponent();
             //button1.Enabled = false;
             //button1.Visible = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-            MessageBox.Show("HOLA MUNDO!!");
-        }
+
 
         private void Menu_Load(object sender, EventArgs e)
         {
 
         }
 
+        private void btnAdminUser_Click(object sender, EventArgs e)
+        {
+            m.Fc.Show_User_Menu();
+        }
+
+
+        ~Menu()
+        {
+            MessageBox.Show("destruido");
+        }
 
     }
 }

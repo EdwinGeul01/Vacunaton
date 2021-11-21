@@ -10,37 +10,41 @@ using System.Windows.Forms;
 
 namespace P1_Vacunaton_21811039
 {
+
+
+
     public partial class Main : Form
     {
-        public Main()
-        {
-            InitializeComponent();
-            MainBar.BackColor = Color.FromArgb(9, 7, 0);
-            panel_user.BackColor = Color.FromArgb(9, 7, 0);
-
-        }
-
+        //variables globales
         int mov;
         int movX;
         int movY;
+        Forms_Controller fc;
+
+        internal Forms_Controller Fc { get => fc; set => fc = value; }
+
+        public Main()
+        {
+            InitializeComponent();
+
+            fc = new Forms_Controller(this);
+            //MainBar.BackColor = Color.FromArgb(9, 7, 0);
+            panel_user.BackColor = Color.FromArgb(9, 7, 0);
+            MainBar.BackColor = Color.FromArgb(0, 0, 51);
+
+        }
+
+    
+
+
+
+
 
 
 
         private void Main_Load_1(object sender, EventArgs e)
         {
-            try
-            {
-                Menu menu_ = new Menu();
-                menu_.MdiParent = this;
-                menu_.Show();
-
-            }
-            catch (Exception err)
-            {
-
-                MessageBox.Show(err.Message);
-
-            }
+            fc.Show_Menu();
         }
 
  
@@ -48,7 +52,7 @@ namespace P1_Vacunaton_21811039
         private void MainBar_MouseDown(object sender, MouseEventArgs e)
         {
             mov = 1;
-            movX = e.X;
+            movX = e.X + panel_user.Width;
             movY = e.Y;
         }
 
