@@ -125,6 +125,9 @@
     <None Include="resources\centros de asistencia .png" />
     <None Include="resources\ciudadanosR.png" />
     <None Include="resources\consultaR.png" />
+    <None Include="resources\crearR.png" />
+    <None Include="resources\editR.png" />
+    <None Include="resources\deleteR.png" />
     <Content Include="resources\pintura.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

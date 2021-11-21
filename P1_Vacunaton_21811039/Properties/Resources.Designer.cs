@@ -113,9 +113,39 @@ namespace P1_Vacunaton_21811039.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap crearR {
+            get {
+                object obj = ResourceManager.GetObject("crearR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap de8457d33abf1c91b48fe4043182cbcd {
             get {
                 object obj = ResourceManager.GetObject("de8457d33abf1c91b48fe4043182cbcd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap deleteR {
+            get {
+                object obj = ResourceManager.GetObject("deleteR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap editR {
+            get {
+                object obj = ResourceManager.GetObject("editR", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

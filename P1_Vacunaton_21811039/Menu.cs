@@ -39,5 +39,9 @@ namespace P1_Vacunaton_21811039
             MessageBox.Show("destruido");
         }
 
+        private void btnAdminVacunas_Click(object sender, EventArgs e)
+        {
+           m.Fc.Show_User_Menu();
+        }
     }
 }
