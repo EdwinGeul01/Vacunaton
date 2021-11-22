@@ -32,11 +32,12 @@ namespace P1_Vacunaton_21811039
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.MainBar = new System.Windows.Forms.Panel();
             this.panel_user = new System.Windows.Forms.Panel();
+            this.btnsalir = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btngohome = new System.Windows.Forms.Button();
             this.panel_user.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,7 +75,8 @@ namespace P1_Vacunaton_21811039
             // panel_user
             // 
             this.panel_user.BackColor = System.Drawing.Color.Gray;
-            this.panel_user.Controls.Add(this.button1);
+            this.panel_user.Controls.Add(this.btngohome);
+            this.panel_user.Controls.Add(this.btnsalir);
             this.panel_user.Controls.Add(this.button6);
             this.panel_user.Controls.Add(this.label3);
             this.panel_user.Controls.Add(this.label2);
@@ -85,6 +87,35 @@ namespace P1_Vacunaton_21811039
             this.panel_user.Name = "panel_user";
             this.panel_user.Size = new System.Drawing.Size(190, 596);
             this.panel_user.TabIndex = 6;
+            // 
+            // btnsalir
+            // 
+            this.btnsalir.BackColor = System.Drawing.Color.Crimson;
+            this.btnsalir.FlatAppearance.BorderSize = 0;
+            this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsalir.ForeColor = System.Drawing.Color.White;
+            this.btnsalir.Location = new System.Drawing.Point(17, 523);
+            this.btnsalir.Name = "btnsalir";
+            this.btnsalir.Size = new System.Drawing.Size(149, 26);
+            this.btnsalir.TabIndex = 6;
+            this.btnsalir.Text = "SALIR";
+            this.btnsalir.UseVisualStyleBackColor = false;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Orange;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.button6.Location = new System.Drawing.Point(-1, 284);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(191, 24);
+            this.button6.TabIndex = 4;
+            this.button6.Text = "OPCIONES PERFIL";
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -109,30 +140,6 @@ namespace P1_Vacunaton_21811039
             this.label2.TabIndex = 1;
             this.label2.Text = "NOMBRE DE USUARIO";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(12, 549);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 26);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "SALIR";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Gainsboro;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.DimGray;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.button6.Location = new System.Drawing.Point(12, 519);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(162, 24);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "OPCIONES PERFIL";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
             // label1
             // 
             this.label1.Image = global::P1_Vacunaton_21811039.Properties.Resources.ruser;
@@ -140,6 +147,21 @@ namespace P1_Vacunaton_21811039
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 104);
             this.label1.TabIndex = 1;
+            // 
+            // btngohome
+            // 
+            this.btngohome.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btngohome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btngohome.FlatAppearance.BorderSize = 0;
+            this.btngohome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btngohome.ForeColor = System.Drawing.Color.Honeydew;
+            this.btngohome.Location = new System.Drawing.Point(0, 252);
+            this.btngohome.Name = "btngohome";
+            this.btngohome.Size = new System.Drawing.Size(190, 26);
+            this.btngohome.TabIndex = 7;
+            this.btngohome.Text = "MENU";
+            this.btngohome.UseVisualStyleBackColor = false;
+            this.btngohome.Click += new System.EventHandler(this.btngohome_Click);
             // 
             // Main
             // 
@@ -173,7 +195,8 @@ namespace P1_Vacunaton_21811039
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnsalir;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btngohome;
     }
 }

@@ -73,5 +73,15 @@ namespace P1_Vacunaton_21811039
         {
 
         }
+
+        private void btngohome_Click(object sender, EventArgs e)
+        {
+            Fc.Show_Menu();
+        }
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

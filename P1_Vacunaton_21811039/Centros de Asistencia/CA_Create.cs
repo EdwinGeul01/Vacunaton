@@ -8,21 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace P1_Vacunaton_21811039
+namespace P1_Vacunaton_21811039.Centros_de_Asistencia
 {
-    public partial class Admin_User : Form
+    public partial class CA_Create : Form
     {
-        Main m;
-
-        public Admin_User(Main m)
+        public CA_Create()
         {
-            this.m = m;
             InitializeComponent();
-        }
-
-        private void btnreturnmenu_Click(object sender, EventArgs e)
-        {
-            m.Fc.Show_Menu();
         }
     }
 }

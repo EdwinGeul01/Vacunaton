@@ -35,9 +35,9 @@ namespace P1_Vacunaton_21811039
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAdminUser = new System.Windows.Forms.Button();
             this.btnAdminVacunas = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnAdminCentrosAsistencia = new System.Windows.Forms.Button();
+            this.btnAdminCiudadanos = new System.Windows.Forms.Button();
+            this.btnconsultas = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -83,9 +83,9 @@ namespace P1_Vacunaton_21811039
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel1.Controls.Add(this.btnAdminUser);
             this.flowLayoutPanel1.Controls.Add(this.btnAdminVacunas);
-            this.flowLayoutPanel1.Controls.Add(this.button3);
-            this.flowLayoutPanel1.Controls.Add(this.button4);
-            this.flowLayoutPanel1.Controls.Add(this.button5);
+            this.flowLayoutPanel1.Controls.Add(this.btnAdminCentrosAsistencia);
+            this.flowLayoutPanel1.Controls.Add(this.btnAdminCiudadanos);
+            this.flowLayoutPanel1.Controls.Add(this.btnconsultas);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 79);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(50, 10, 0, 0);
@@ -138,71 +138,73 @@ namespace P1_Vacunaton_21811039
             this.btnAdminVacunas.UseVisualStyleBackColor = false;
             this.btnAdminVacunas.Click += new System.EventHandler(this.btnAdminVacunas_Click);
             // 
-            // button3
+            // btnAdminCentrosAsistencia
             // 
-            this.button3.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Image = global::P1_Vacunaton_21811039.Properties.Resources.centros_de_asistencia_;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(53, 173);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(614, 74);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "ADMINISTRAR CENTROS DE ASISTENCIA";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnAdminCentrosAsistencia.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnAdminCentrosAsistencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdminCentrosAsistencia.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAdminCentrosAsistencia.FlatAppearance.BorderSize = 0;
+            this.btnAdminCentrosAsistencia.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnAdminCentrosAsistencia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnAdminCentrosAsistencia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.btnAdminCentrosAsistencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdminCentrosAsistencia.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdminCentrosAsistencia.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAdminCentrosAsistencia.Image = global::P1_Vacunaton_21811039.Properties.Resources.centros_de_asistencia_;
+            this.btnAdminCentrosAsistencia.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAdminCentrosAsistencia.Location = new System.Drawing.Point(53, 173);
+            this.btnAdminCentrosAsistencia.Name = "btnAdminCentrosAsistencia";
+            this.btnAdminCentrosAsistencia.Size = new System.Drawing.Size(614, 74);
+            this.btnAdminCentrosAsistencia.TabIndex = 2;
+            this.btnAdminCentrosAsistencia.Text = "ADMINISTRAR CENTROS DE ASISTENCIA";
+            this.btnAdminCentrosAsistencia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdminCentrosAsistencia.UseVisualStyleBackColor = false;
+            this.btnAdminCentrosAsistencia.Click += new System.EventHandler(this.btnAdminCentrosAsistencia_Click);
             // 
-            // button4
+            // btnAdminCiudadanos
             // 
-            this.button4.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Image = global::P1_Vacunaton_21811039.Properties.Resources.ciudadanosR;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(53, 253);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(614, 74);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "ADMINISTRAR CIUDADANOS";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnAdminCiudadanos.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnAdminCiudadanos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdminCiudadanos.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAdminCiudadanos.FlatAppearance.BorderSize = 0;
+            this.btnAdminCiudadanos.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnAdminCiudadanos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnAdminCiudadanos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.btnAdminCiudadanos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdminCiudadanos.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdminCiudadanos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAdminCiudadanos.Image = global::P1_Vacunaton_21811039.Properties.Resources.ciudadanosR;
+            this.btnAdminCiudadanos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAdminCiudadanos.Location = new System.Drawing.Point(53, 253);
+            this.btnAdminCiudadanos.Name = "btnAdminCiudadanos";
+            this.btnAdminCiudadanos.Size = new System.Drawing.Size(614, 74);
+            this.btnAdminCiudadanos.TabIndex = 3;
+            this.btnAdminCiudadanos.Text = "ADMINISTRAR CIUDADANOS";
+            this.btnAdminCiudadanos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdminCiudadanos.UseVisualStyleBackColor = false;
+            this.btnAdminCiudadanos.Click += new System.EventHandler(this.btnAdminCiudadanos_Click);
             // 
-            // button5
+            // btnconsultas
             // 
-            this.button5.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Image = global::P1_Vacunaton_21811039.Properties.Resources.consultaR;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.Location = new System.Drawing.Point(53, 333);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(614, 74);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "CONSULTAS";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnconsultas.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnconsultas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnconsultas.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnconsultas.FlatAppearance.BorderSize = 0;
+            this.btnconsultas.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnconsultas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnconsultas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.btnconsultas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnconsultas.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnconsultas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnconsultas.Image = global::P1_Vacunaton_21811039.Properties.Resources.consultaR;
+            this.btnconsultas.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnconsultas.Location = new System.Drawing.Point(53, 333);
+            this.btnconsultas.Name = "btnconsultas";
+            this.btnconsultas.Size = new System.Drawing.Size(614, 74);
+            this.btnconsultas.TabIndex = 4;
+            this.btnconsultas.Text = "CONSULTAS";
+            this.btnconsultas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnconsultas.UseVisualStyleBackColor = false;
             // 
             // Menu
             // 
@@ -226,9 +228,9 @@ namespace P1_Vacunaton_21811039
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button btnAdminUser;
         private System.Windows.Forms.Button btnAdminVacunas;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnAdminCentrosAsistencia;
+        private System.Windows.Forms.Button btnAdminCiudadanos;
+        private System.Windows.Forms.Button btnconsultas;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
     }

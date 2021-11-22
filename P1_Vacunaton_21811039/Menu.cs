@@ -30,7 +30,7 @@ namespace P1_Vacunaton_21811039
 
         private void btnAdminUser_Click(object sender, EventArgs e)
         {
-            m.Fc.Show_User_Menu();
+            m.Fc.Show_Option_Menu(1);
         }
 
 
@@ -41,7 +41,17 @@ namespace P1_Vacunaton_21811039
 
         private void btnAdminVacunas_Click(object sender, EventArgs e)
         {
-           m.Fc.Show_User_Menu();
+           m.Fc.Show_Option_Menu(2);
+        }
+
+        private void btnAdminCentrosAsistencia_Click(object sender, EventArgs e)
+        {
+            m.Fc.Show_Option_Menu(3);
+        }
+
+        private void btnAdminCiudadanos_Click(object sender, EventArgs e)
+        {
+            m.Fc.Show_Option_Menu(4);
         }
     }
 }

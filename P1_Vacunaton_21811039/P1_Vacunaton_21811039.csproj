@@ -46,12 +46,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms_Controller.cs" />
-    <Compile Include="Users\Admin_User.cs">
+    <Compile Include="Centros de Asistencia\CA_Create.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Users\Admin_User.Designer.cs">
-      <DependentUpon>Admin_User.cs</DependentUpon>
+    <Compile Include="Centros de Asistencia\CA_Create.Designer.cs">
+      <DependentUpon>CA_Create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Centros de Asistencia\CA_Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Centros de Asistencia\CA_Delete.Designer.cs">
+      <DependentUpon>CA_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Centros de Asistencia\CA_Modf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Centros de Asistencia\CA_Modf.Designer.cs">
+      <DependentUpon>CA_Modf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciudadanos\Ciudadano_Create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciudadanos\Ciudadano_Create.Designer.cs">
+      <DependentUpon>Ciudadano_Create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciudadanos\Ciudadano_Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciudadanos\Ciudadano_Delete.Designer.cs">
+      <DependentUpon>Ciudadano_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciudadanos\Ciudadano_Modf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciudadanos\Ciudadano_Modf.Designer.cs">
+      <DependentUpon>Ciudadano_Modf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enfermedades\Enfermedades_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enfermedades\Enfermedades_list.Designer.cs">
+      <DependentUpon>Enfermedades_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enfermedades\Enfermedad_Create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enfermedades\Enfermedad_Create.Designer.cs">
+      <DependentUpon>Enfermedad_Create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Controller.cs" />
+    <Compile Include="Auxiliar\Options_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auxiliar\Options_Menu.Designer.cs">
+      <DependentUpon>Options_Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -73,8 +121,68 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Users\Admin_User.resx">
-      <DependentUpon>Admin_User.cs</DependentUpon>
+    <Compile Include="Users\User_Create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\User_Create.Designer.cs">
+      <DependentUpon>User_Create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\User_Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\User_Delete.Designer.cs">
+      <DependentUpon>User_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\User_Modf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\User_Modf.Designer.cs">
+      <DependentUpon>User_Modf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vacunas\Vacuna_Create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacunas\Vacuna_Create.Designer.cs">
+      <DependentUpon>Vacuna_Create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vacunas\Vacuna_Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacunas\Vacuna_Delete.Designer.cs">
+      <DependentUpon>Vacuna_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vacunas\Vacuna_Modf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacunas\Vacuna_Modf.Designer.cs">
+      <DependentUpon>Vacuna_Modf.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Auxiliar\Options_Menu.resx">
+      <DependentUpon>Options_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Centros de Asistencia\CA_Create.resx">
+      <DependentUpon>CA_Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Centros de Asistencia\CA_Delete.resx">
+      <DependentUpon>CA_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Centros de Asistencia\CA_Modf.resx">
+      <DependentUpon>CA_Modf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciudadanos\Ciudadano_Create.resx">
+      <DependentUpon>Ciudadano_Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciudadanos\Ciudadano_Delete.resx">
+      <DependentUpon>Ciudadano_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciudadanos\Ciudadano_Modf.resx">
+      <DependentUpon>Ciudadano_Modf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enfermedades\Enfermedades_list.resx">
+      <DependentUpon>Enfermedades_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enfermedades\Enfermedad_Create.resx">
+      <DependentUpon>Enfermedad_Create.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -89,6 +197,24 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\User_Create.resx">
+      <DependentUpon>User_Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\User_Delete.resx">
+      <DependentUpon>User_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\User_Modf.resx">
+      <DependentUpon>User_Modf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacunas\Vacuna_Create.resx">
+      <DependentUpon>Vacuna_Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacunas\Vacuna_Delete.resx">
+      <DependentUpon>Vacuna_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacunas\Vacuna_Modf.resx">
+      <DependentUpon>Vacuna_Modf.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -109,6 +235,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="resources\white-home.png" />
     <None Include="resources\vacunas.png" />
     <None Include="resources\tools.png" />
     <None Include="resources\ruser.png" />
@@ -130,5 +257,6 @@
     <None Include="resources\deleteR.png" />
     <Content Include="resources\pintura.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
