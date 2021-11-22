@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace P1_Vacunaton_21811039.Users
+namespace P1_Vacunaton_21811039
 {
     public partial class User_Modf : Form
     {
-        public User_Modf()
+        Main Main;
+        public User_Modf(Main m)
         {
+            Main = m;
             InitializeComponent();
         }
     }

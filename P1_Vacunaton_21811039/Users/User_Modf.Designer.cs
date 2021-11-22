@@ -1,5 +1,5 @@
 ﻿
-namespace P1_Vacunaton_21811039.Users
+namespace P1_Vacunaton_21811039
 {
     partial class User_Modf
     {

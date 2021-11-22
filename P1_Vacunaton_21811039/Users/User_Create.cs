@@ -12,14 +12,31 @@ namespace P1_Vacunaton_21811039
 {
     public partial class User_Create : Form
     {
-        public User_Create()
+        Main main;
+        Conexion cn = new Conexion();
+        public User_Create(Main m)
         {
+            main = m;
             InitializeComponent();
         }
 
         private void lbldirectory_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btncreate_Click(object sender, EventArgs e)
+        {
+            cn.CrearUsuario(txtcod.Text,
+                txtpass.Text,
+                txtnidentidad.Text,
+                txtnombre.Text,
+                "M",
+                txtcorreo.Text,
+                txttelefono.Text,
+                cbrol.Text, cbCentrovacunas.Text,
+                cbvacunas.Text
+                );
         }
     }
 }

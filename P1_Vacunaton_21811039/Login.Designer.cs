@@ -65,6 +65,7 @@ namespace P1_Vacunaton_21811039
             this.btnlogin.TabIndex = 1;
             this.btnlogin.Text = "LOGIN";
             this.btnlogin.UseVisualStyleBackColor = true;
+            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
             // txtuser
             // 
@@ -101,6 +102,7 @@ namespace P1_Vacunaton_21811039
             this.btnexit.TabIndex = 4;
             this.btnexit.Text = "CANCEL";
             this.btnexit.UseVisualStyleBackColor = true;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
             // 
             // label2
             // 

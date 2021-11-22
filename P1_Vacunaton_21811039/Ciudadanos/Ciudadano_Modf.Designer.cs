@@ -1,5 +1,5 @@
 ﻿
-namespace P1_Vacunaton_21811039.Ciudadanos
+namespace P1_Vacunaton_21811039
 {
     partial class Ciudadano_Modf
     {
@@ -337,6 +337,7 @@ namespace P1_Vacunaton_21811039.Ciudadanos
             this.Controls.Add(this.lbldirectory);
             this.Name = "Ciudadano_Modf";
             this.Text = "Ciudadano_Modf";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

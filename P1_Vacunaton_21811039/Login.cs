@@ -12,6 +12,8 @@ namespace P1_Vacunaton_21811039
 {
     public partial class Login : Form
     {
+        Conexion cn = new Conexion();
+
         public Login()
         {
             InitializeComponent();
@@ -33,6 +35,23 @@ namespace P1_Vacunaton_21811039
         private void txtpass_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            if(cn.Validar(txtuser.Text,txtpass.Text))
+            {
+                Main m = new Main(cn.Get_User(txtuser.Text));
+                m.StartPosition = FormStartPosition.CenterScreen;
+                m.Show();
+                this.Hide();
+                this.Enabled = false;
+            }
         }
     }
 }

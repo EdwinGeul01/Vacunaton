@@ -32,12 +32,13 @@ namespace P1_Vacunaton_21811039
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.MainBar = new System.Windows.Forms.Panel();
             this.panel_user = new System.Windows.Forms.Panel();
+            this.lbltipodeuser = new System.Windows.Forms.Label();
+            this.btngohome = new System.Windows.Forms.Button();
             this.btnsalir = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblnombre = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btngohome = new System.Windows.Forms.Button();
             this.panel_user.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,11 +76,12 @@ namespace P1_Vacunaton_21811039
             // panel_user
             // 
             this.panel_user.BackColor = System.Drawing.Color.Gray;
+            this.panel_user.Controls.Add(this.lbltipodeuser);
             this.panel_user.Controls.Add(this.btngohome);
             this.panel_user.Controls.Add(this.btnsalir);
             this.panel_user.Controls.Add(this.button6);
             this.panel_user.Controls.Add(this.label3);
-            this.panel_user.Controls.Add(this.label2);
+            this.panel_user.Controls.Add(this.lblnombre);
             this.panel_user.Controls.Add(this.label1);
             this.panel_user.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_user.Location = new System.Drawing.Point(0, 0);
@@ -87,6 +89,33 @@ namespace P1_Vacunaton_21811039
             this.panel_user.Name = "panel_user";
             this.panel_user.Size = new System.Drawing.Size(190, 596);
             this.panel_user.TabIndex = 6;
+            // 
+            // lbltipodeuser
+            // 
+            this.lbltipodeuser.BackColor = System.Drawing.Color.Transparent;
+            this.lbltipodeuser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltipodeuser.ForeColor = System.Drawing.Color.Crimson;
+            this.lbltipodeuser.Location = new System.Drawing.Point(12, 192);
+            this.lbltipodeuser.Name = "lbltipodeuser";
+            this.lbltipodeuser.Size = new System.Drawing.Size(170, 34);
+            this.lbltipodeuser.TabIndex = 8;
+            this.lbltipodeuser.Text = "rer";
+            this.lbltipodeuser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btngohome
+            // 
+            this.btngohome.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btngohome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btngohome.FlatAppearance.BorderSize = 0;
+            this.btngohome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btngohome.ForeColor = System.Drawing.Color.Honeydew;
+            this.btngohome.Location = new System.Drawing.Point(0, 252);
+            this.btngohome.Name = "btngohome";
+            this.btngohome.Size = new System.Drawing.Size(190, 26);
+            this.btngohome.TabIndex = 7;
+            this.btngohome.Text = "MENU";
+            this.btngohome.UseVisualStyleBackColor = false;
+            this.btngohome.Click += new System.EventHandler(this.btngohome_Click);
             // 
             // btnsalir
             // 
@@ -129,16 +158,17 @@ namespace P1_Vacunaton_21811039
             this.label3.TabIndex = 2;
             this.label3.Text = "TIPO DE USUARIO : ";
             // 
-            // label2
+            // lblnombre
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(37, 142);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "NOMBRE DE USUARIO";
+            this.lblnombre.BackColor = System.Drawing.Color.Transparent;
+            this.lblnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnombre.ForeColor = System.Drawing.Color.White;
+            this.lblnombre.Location = new System.Drawing.Point(12, 144);
+            this.lblnombre.Name = "lblnombre";
+            this.lblnombre.Size = new System.Drawing.Size(170, 16);
+            this.lblnombre.TabIndex = 1;
+            this.lblnombre.Text = "NOMBRE DE USUARIO";
+            this.lblnombre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -147,21 +177,6 @@ namespace P1_Vacunaton_21811039
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 104);
             this.label1.TabIndex = 1;
-            // 
-            // btngohome
-            // 
-            this.btngohome.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.btngohome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btngohome.FlatAppearance.BorderSize = 0;
-            this.btngohome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btngohome.ForeColor = System.Drawing.Color.Honeydew;
-            this.btngohome.Location = new System.Drawing.Point(0, 252);
-            this.btngohome.Name = "btngohome";
-            this.btngohome.Size = new System.Drawing.Size(190, 26);
-            this.btngohome.TabIndex = 7;
-            this.btngohome.Text = "MENU";
-            this.btngohome.UseVisualStyleBackColor = false;
-            this.btngohome.Click += new System.EventHandler(this.btngohome_Click);
             // 
             // Main
             // 
@@ -193,10 +208,11 @@ namespace P1_Vacunaton_21811039
         private System.Windows.Forms.Panel MainBar;
         private System.Windows.Forms.Panel panel_user;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnsalir;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button btngohome;
+        private System.Windows.Forms.Label lbltipodeuser;
+        private System.Windows.Forms.Label lblnombre;
     }
 }

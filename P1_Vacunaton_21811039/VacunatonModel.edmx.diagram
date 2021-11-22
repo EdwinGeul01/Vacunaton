@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5fdb23386a4d4494a4264576f3f32edb" Name="Diagram1">
+        <EntityTypeShape EntityType="VacunatonModel.CentroAsistencia" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VacunatonModel.Ciudadanos" Width="1.5" PointX="3.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VacunatonModel.EnfermedadesBases" Width="1.5" PointX="6" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VacunatonModel.roles" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="VacunatonModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="VacunatonModel.Usuario" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="VacunatonModel.Vacunas" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VacunatonModel.VacunaXCiudadanos" Width="1.5" PointX="6" PointY="5.125" IsExpanded="true" />
+        <AssociationConnector Association="VacunatonModel.FK__Usuario__IdCentr__778AC167" ManuallyRouted="false" />
+        <AssociationConnector Association="VacunatonModel.FK__VacunaXCi__IdCiu__7A672E12" ManuallyRouted="false" />
+        <AssociationConnector Association="VacunatonModel.FK__Usuario__rol__797309D9" ManuallyRouted="false" />
+        <AssociationConnector Association="VacunatonModel.FK__Usuario__IdVacun__787EE5A0" ManuallyRouted="false" />
+        <AssociationConnector Association="VacunatonModel.FK__VacunaXCi__CodVa__7B5B524B" ManuallyRouted="false" />
+        <AssociationConnector Association="VacunatonModel.EnfermedadesXCiudadanos" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

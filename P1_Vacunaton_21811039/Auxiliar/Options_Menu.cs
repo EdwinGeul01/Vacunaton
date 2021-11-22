@@ -70,10 +70,13 @@ namespace P1_Vacunaton_21811039
                     m.Fc.Show_Create_User();
                     break;
                 case 2:
+                    m.Fc.Show_Create_vacuna();
                     break;
                 case 3:
+                    m.Fc.Show_Create_CentroDeAsistencia();
                     break;
                 case 4:
+                    m.Fc.Show_Create_Ciudadanos();
                     break;
 
             }
@@ -87,10 +90,13 @@ namespace P1_Vacunaton_21811039
                     m.Fc.Show_Modf_User();
                     break;
                 case 2:
+                    m.Fc.Show_Modf_vacuna();
                     break;
                 case 3:
+                    m.Fc.Show_Modf_CentroDeAsistencia();
                     break;
                 case 4:
+                    m.Fc.Show_Modf_Ciudadanos();
                     break;
 
             }
@@ -104,10 +110,13 @@ namespace P1_Vacunaton_21811039
                     m.Fc.Show_Delete_User();
                     break;
                 case 2:
+                    m.Fc.Show_Delete_vacuna();
                     break;
                 case 3:
+                    m.Fc.Show_Delete_CentroDeAsistencia();
                     break;
                 case 4:
+                    m.Fc.Show_Delete_Ciudadanos();
                     break;
 
             }

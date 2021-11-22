@@ -12,9 +12,11 @@ namespace P1_Vacunaton_21811039
 {
 
 
-
     public partial class Main : Form
     {
+
+        public Usuario user_login;
+
         //variables globales
         int mov;
         int movX;
@@ -23,7 +25,7 @@ namespace P1_Vacunaton_21811039
 
         internal Forms_Controller Fc { get => fc; set => fc = value; }
 
-        public Main()
+        public Main(Usuario u)
         {
             InitializeComponent();
 
@@ -31,13 +33,32 @@ namespace P1_Vacunaton_21811039
             //MainBar.BackColor = Color.FromArgb(9, 7, 0);
             panel_user.BackColor = Color.FromArgb(9, 7, 0);
             MainBar.BackColor = Color.FromArgb(0, 0, 51);
+            user_login = u;
 
+            lblnombre.Text = user_login.NombreCompleto;
+            Config_TypeUser();
+            
         }
 
     
 
 
+        private void Config_TypeUser()
+        {
+            switch(user_login.rol)
+            {
+                case "1":
+                    lbltipodeuser.Text = "ADMINISTRADOR";
+                    break;
+                case "2":
+                    lbltipodeuser.Text = "OFICIAL MEDICO";
+                    break;
+                case "3":
+                    lbltipodeuser.Text = "DIGITADOR";
+                    break;
 
+            }
+        }
 
 
 

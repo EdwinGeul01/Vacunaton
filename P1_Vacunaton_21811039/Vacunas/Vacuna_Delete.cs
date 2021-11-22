@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace P1_Vacunaton_21811039.Vacunas
+namespace P1_Vacunaton_21811039
 {
     public partial class Vacuna_Delete : Form
     {

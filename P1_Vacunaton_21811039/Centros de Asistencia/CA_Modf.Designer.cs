@@ -1,5 +1,5 @@
 ﻿
-namespace P1_Vacunaton_21811039.Centros_de_Asistencia
+namespace P1_Vacunaton_21811039
 {
     partial class CA_Modf
     {
@@ -71,7 +71,7 @@ namespace P1_Vacunaton_21811039.Centros_de_Asistencia
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(-3, 556);
+            this.button2.Location = new System.Drawing.Point(-2, 472);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(197, 38);
             this.button2.TabIndex = 84;
@@ -292,6 +292,7 @@ namespace P1_Vacunaton_21811039.Centros_de_Asistencia
             this.Controls.Add(this.lbldirectory);
             this.Name = "CA_Modf";
             this.Text = "CA_Modf";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

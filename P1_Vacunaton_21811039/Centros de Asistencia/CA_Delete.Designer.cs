@@ -1,5 +1,5 @@
 ﻿
-namespace P1_Vacunaton_21811039.Centros_de_Asistencia
+namespace P1_Vacunaton_21811039
 {
     partial class CA_Delete
     {
@@ -292,6 +292,7 @@ namespace P1_Vacunaton_21811039.Centros_de_Asistencia
             this.Controls.Add(this.lbldirectory);
             this.Name = "CA_Delete";
             this.Text = "CA_Delete";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,5 +1,5 @@
 ﻿
-namespace P1_Vacunaton_21811039.Vacunas
+namespace P1_Vacunaton_21811039
 {
     partial class Vacuna_Modf
     {
@@ -294,6 +294,7 @@ namespace P1_Vacunaton_21811039.Vacunas
             this.Controls.Add(this.lbldirectory);
             this.Name = "Vacuna_Modf";
             this.Text = "Vacuna_Modf";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

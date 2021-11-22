@@ -19,12 +19,33 @@ namespace P1_Vacunaton_21811039
             InitializeComponent();
             //button1.Enabled = false;
             //button1.Visible = false;
+
         }
 
 
 
         private void Menu_Load(object sender, EventArgs e)
         {
+            switch(m.user_login.rol)
+            {
+                case "1":
+                    break;
+                case "2":
+                    btnAdminCiudadanos.Visible = false;
+                    btnAdminCiudadanos.Enabled = false;
+                    break;
+                case "3":
+                    btnAdminUser.Enabled = false;
+                    btnAdminUser.Visible = false;
+                    btnAdminCentrosAsistencia.Visible = false;
+                    btnAdminCentrosAsistencia.Enabled = false;
+                    btnAdminVacunas.Enabled = false;
+                    btnAdminVacunas.Visible = false;
+                    break;
+
+
+
+            }
 
         }
 
