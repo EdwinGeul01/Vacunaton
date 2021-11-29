@@ -121,20 +121,20 @@
   <data name="centros de asistencia " type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\centros de asistencia .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logoname" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\logoname.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Sample_User_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Sample_User_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bubbling-black" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\bubbling-black.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="deleteR" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\deleteR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="users resizeWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\users resizeWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="de8457d33abf1c91b48fe4043182cbcd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\de8457d33abf1c91b48fe4043182cbcd.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_panel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\user_panel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Webp1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Webp.net-resizeimage.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,17 +142,29 @@
   <data name="tools" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\tools.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="360-3608025_frame-bottom-2-1475-graphic-design" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\360-3608025_frame-bottom-2-1475-graphic-design.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="consultaR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\consultaR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ruser" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\ruser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="vacunas_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\vacunas_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="heartbeat-pulse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\heartbeat-pulse.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="crearR" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\crearR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white-home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\white-home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="centros de asistencia_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\centros de asistencia_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ciudadanosR_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ciudadanosR_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="editR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\editR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,16 +175,25 @@
   <data name="ciudadanosR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\ciudadanosR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="vacunas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\vacunas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="deleteR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\deleteR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="users resize" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\users resize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="360-3608025_frame-bottom-2-1475-graphic-design" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\360-3608025_frame-bottom-2-1475-graphic-design.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sign_Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Sign_Up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="white-home" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\white-home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="vacunas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\vacunas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crearR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\crearR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoname" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\logoname.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="consultaR_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\consultaR_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

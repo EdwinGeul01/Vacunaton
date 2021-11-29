@@ -15,7 +15,7 @@ namespace P1_Vacunaton_21811039
     public partial class VacunaXCiudadanos
     {
         public string IdCiudadano { get; set; }
-        public Nullable<int> NumeroDosis { get; set; }
+        public int NumeroDosis { get; set; }
         public string IdCentroAsistencia { get; set; }
         public string CodVacuna { get; set; }
         public Nullable<System.DateTime> Fecha_Aplicacion { get; set; }

@@ -8,13 +8,36 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace P1_Vacunaton_21811039.Enfermedades
+namespace P1_Vacunaton_21811039
 {
     public partial class Enfermedad_Create : Form
     {
-        public Enfermedad_Create()
+        Enfermedades_list Enf_List;
+        Conexion cn = new Conexion();
+
+        public Enfermedad_Create(Enfermedades_list Enf_L)
         {
+            Enf_List = Enf_L;
             InitializeComponent();
+        }
+
+        private void btncrear_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                cn.CrearEnfermedades(txtcod.Text, txtname.Text, txtdesc.Text);
+                Enf_List.Load_Enfermedades();
+                this.Close();
+
+            }catch(Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+        }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

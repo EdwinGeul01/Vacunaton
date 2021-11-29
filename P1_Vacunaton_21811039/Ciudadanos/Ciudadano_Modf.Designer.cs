@@ -29,61 +29,40 @@ namespace P1_Vacunaton_21811039
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.label10 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dpfechanec = new System.Windows.Forms.DateTimePicker();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnmodificar = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txttelefono = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.txtdirec = new System.Windows.Forms.TextBox();
+            this.rbfem = new System.Windows.Forms.RadioButton();
+            this.rbmasc = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtid = new System.Windows.Forms.TextBox();
             this.lbltitle = new System.Windows.Forms.Label();
             this.lbldirectory = new System.Windows.Forms.Label();
+            this.btnbuscar = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btnAgregarenfermedad = new System.Windows.Forms.Button();
+            this.cbEstadocivil = new System.Windows.Forms.ComboBox();
+            this.lvEnfermedades = new System.Windows.Forms.CheckedListBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listView1
+            // dpfechanec
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(354, 183);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(221, 90);
-            this.listView1.TabIndex = 94;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label10.Location = new System.Drawing.Point(354, 157);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(126, 14);
-            this.label10.TabIndex = 93;
-            this.label10.Text = "ENFERMEDADES BASES";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CustomFormat = "dd/mm/yyy";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(50, 203);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 91;
+            this.dpfechanec.CustomFormat = "dd/MM/yyy";
+            this.dpfechanec.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dpfechanec.Location = new System.Drawing.Point(50, 203);
+            this.dpfechanec.Name = "dpfechanec";
+            this.dpfechanec.Size = new System.Drawing.Size(253, 20);
+            this.dpfechanec.TabIndex = 91;
             // 
             // button2
             // 
@@ -96,24 +75,17 @@ namespace P1_Vacunaton_21811039
             this.button2.Text = "CANCELAR";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnmodificar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(47, 411);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(256, 86);
-            this.button1.TabIndex = 89;
-            this.button1.Text = "MODIFICAR";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(354, 113);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(221, 21);
-            this.comboBox1.TabIndex = 88;
+            this.btnmodificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnmodificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnmodificar.Location = new System.Drawing.Point(47, 411);
+            this.btnmodificar.Name = "btnmodificar";
+            this.btnmodificar.Size = new System.Drawing.Size(256, 86);
+            this.btnmodificar.TabIndex = 89;
+            this.btnmodificar.Text = "MODIFICAR";
+            this.btnmodificar.UseVisualStyleBackColor = false;
+            this.btnmodificar.Click += new System.EventHandler(this.btnmodificar_Click);
             // 
             // label9
             // 
@@ -131,18 +103,18 @@ namespace P1_Vacunaton_21811039
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(354, 350);
+            this.label8.Location = new System.Drawing.Point(47, 234);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(60, 14);
             this.label8.TabIndex = 86;
             this.label8.Text = "TELEFONO";
             // 
-            // textBox6
+            // txttelefono
             // 
-            this.textBox6.Location = new System.Drawing.Point(354, 369);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(221, 20);
-            this.textBox6.TabIndex = 85;
+            this.txttelefono.Location = new System.Drawing.Point(47, 253);
+            this.txttelefono.Name = "txttelefono";
+            this.txttelefono.Size = new System.Drawing.Size(204, 20);
+            this.txttelefono.TabIndex = 85;
             // 
             // label6
             // 
@@ -155,34 +127,34 @@ namespace P1_Vacunaton_21811039
             this.label6.TabIndex = 84;
             this.label6.Text = "DIRECCION";
             // 
-            // textBox5
+            // txtdirec
             // 
-            this.textBox5.Location = new System.Drawing.Point(47, 369);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(268, 20);
-            this.textBox5.TabIndex = 83;
+            this.txtdirec.Location = new System.Drawing.Point(47, 369);
+            this.txtdirec.Name = "txtdirec";
+            this.txtdirec.Size = new System.Drawing.Size(268, 20);
+            this.txtdirec.TabIndex = 83;
             // 
-            // radioButton2
+            // rbfem
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(163, 314);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(81, 17);
-            this.radioButton2.TabIndex = 82;
-            this.radioButton2.Text = "FEMENINO";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbfem.AutoSize = true;
+            this.rbfem.Location = new System.Drawing.Point(163, 314);
+            this.rbfem.Name = "rbfem";
+            this.rbfem.Size = new System.Drawing.Size(81, 17);
+            this.rbfem.TabIndex = 82;
+            this.rbfem.Text = "FEMENINO";
+            this.rbfem.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbmasc
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(47, 314);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(88, 17);
-            this.radioButton1.TabIndex = 81;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "MASCULINO";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbmasc.AutoSize = true;
+            this.rbmasc.Checked = true;
+            this.rbmasc.Location = new System.Drawing.Point(47, 314);
+            this.rbmasc.Name = "rbmasc";
+            this.rbmasc.Size = new System.Drawing.Size(88, 17);
+            this.rbmasc.TabIndex = 81;
+            this.rbmasc.TabStop = true;
+            this.rbmasc.Text = "MASCULINO";
+            this.rbmasc.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -194,24 +166,6 @@ namespace P1_Vacunaton_21811039
             this.label5.Size = new System.Drawing.Size(50, 14);
             this.label5.TabIndex = 80;
             this.label5.Text = "GENERO";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(47, 230);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 14);
-            this.label4.TabIndex = 79;
-            this.label4.Text = "EDAD";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(47, 249);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(204, 20);
-            this.textBox4.TabIndex = 78;
             // 
             // label3
             // 
@@ -235,12 +189,12 @@ namespace P1_Vacunaton_21811039
             this.label2.TabIndex = 76;
             this.label2.Text = "NOMBRE";
             // 
-            // textBox2
+            // txtnombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(47, 157);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(204, 20);
-            this.textBox2.TabIndex = 75;
+            this.txtnombre.Location = new System.Drawing.Point(47, 157);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(204, 20);
+            this.txtnombre.TabIndex = 75;
             // 
             // label1
             // 
@@ -253,12 +207,12 @@ namespace P1_Vacunaton_21811039
             this.label1.TabIndex = 74;
             this.label1.Text = "ID";
             // 
-            // textBox1
+            // txtid
             // 
-            this.textBox1.Location = new System.Drawing.Point(47, 115);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(204, 20);
-            this.textBox1.TabIndex = 73;
+            this.txtid.Location = new System.Drawing.Point(47, 115);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(204, 20);
+            this.txtid.TabIndex = 73;
             // 
             // lbltitle
             // 
@@ -285,6 +239,62 @@ namespace P1_Vacunaton_21811039
     "           ";
             this.lbldirectory.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // btnbuscar
+            // 
+            this.btnbuscar.Location = new System.Drawing.Point(256, 108);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(89, 29);
+            this.btnbuscar.TabIndex = 92;
+            this.btnbuscar.Text = "BUSCAR";
+            this.btnbuscar.UseVisualStyleBackColor = true;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label10.Location = new System.Drawing.Point(354, 159);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(126, 14);
+            this.label10.TabIndex = 94;
+            this.label10.Text = "ENFERMEDADES BASES";
+            // 
+            // btnAgregarenfermedad
+            // 
+            this.btnAgregarenfermedad.Location = new System.Drawing.Point(486, 154);
+            this.btnAgregarenfermedad.Name = "btnAgregarenfermedad";
+            this.btnAgregarenfermedad.Size = new System.Drawing.Size(146, 29);
+            this.btnAgregarenfermedad.TabIndex = 93;
+            this.btnAgregarenfermedad.Text = "AGREGAR O ELIMINAR";
+            this.btnAgregarenfermedad.UseVisualStyleBackColor = true;
+            this.btnAgregarenfermedad.Click += new System.EventHandler(this.btnAgregarenfermedad_Click);
+            // 
+            // cbEstadocivil
+            // 
+            this.cbEstadocivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbEstadocivil.FormattingEnabled = true;
+            this.cbEstadocivil.Items.AddRange(new object[] {
+            "SOLTERO",
+            "CASADO",
+            "DIVORCIADO",
+            "SEPARACION EN PROCESO JUDICIAL",
+            "VIUDO",
+            "CONCUBINATO"});
+            this.cbEstadocivil.Location = new System.Drawing.Point(357, 116);
+            this.cbEstadocivil.Name = "cbEstadocivil";
+            this.cbEstadocivil.Size = new System.Drawing.Size(221, 21);
+            this.cbEstadocivil.TabIndex = 96;
+            // 
+            // lvEnfermedades
+            // 
+            this.lvEnfermedades.Enabled = false;
+            this.lvEnfermedades.FormattingEnabled = true;
+            this.lvEnfermedades.Location = new System.Drawing.Point(354, 185);
+            this.lvEnfermedades.Name = "lvEnfermedades";
+            this.lvEnfermedades.Size = new System.Drawing.Size(278, 139);
+            this.lvEnfermedades.TabIndex = 97;
+            // 
             // label7
             // 
             this.label7.BackColor = System.Drawing.Color.Transparent;
@@ -296,42 +306,32 @@ namespace P1_Vacunaton_21811039
             this.label7.Size = new System.Drawing.Size(237, 26);
             this.label7.TabIndex = 71;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(256, 108);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(89, 29);
-            this.button3.TabIndex = 92;
-            this.button3.Text = "BUSCAR";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // Ciudadano_Modf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(776, 596);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.lvEnfermedades);
+            this.Controls.Add(this.cbEstadocivil);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.btnAgregarenfermedad);
+            this.Controls.Add(this.btnbuscar);
+            this.Controls.Add(this.dpfechanec);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btnmodificar);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txttelefono);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.txtdirec);
+            this.Controls.Add(this.rbfem);
+            this.Controls.Add(this.rbmasc);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtid);
             this.Controls.Add(this.lbltitle);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lbldirectory);
@@ -344,31 +344,29 @@ namespace P1_Vacunaton_21811039
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dpfechanec;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnmodificar;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txttelefono;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.TextBox txtdirec;
+        private System.Windows.Forms.RadioButton rbfem;
+        private System.Windows.Forms.RadioButton rbmasc;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.Label lbltitle;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lbldirectory;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnbuscar;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnAgregarenfermedad;
+        private System.Windows.Forms.ComboBox cbEstadocivil;
+        private System.Windows.Forms.CheckedListBox lvEnfermedades;
     }
 }

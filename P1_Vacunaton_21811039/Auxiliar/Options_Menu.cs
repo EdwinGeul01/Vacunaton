@@ -14,6 +14,7 @@ namespace P1_Vacunaton_21811039
     {
         Main m;
         int option;
+        Conexion cn = new Conexion();
 
         public Admin_User(Main m,int i)
         {
@@ -46,6 +47,8 @@ namespace P1_Vacunaton_21811039
                 case 4:
                     lbldirectory.Text = "                       OPCIONES  -  ADMINISTRAR CIUDADANOS               ";
                     lbltitle.Text = "CIUDADANOS          ";
+                    btnAplicarDosis.Enabled = true;
+                    btnAplicarDosis.Visible = true;
                     panelimagesection.BackgroundImage = global::P1_Vacunaton_21811039.Properties.Resources.ciudadanosR;
                     break;
  
@@ -120,6 +123,20 @@ namespace P1_Vacunaton_21811039
                     break;
 
             }
+        }
+
+        private void btnAplicarDosis_Click(object sender, EventArgs e)
+        {
+
+
+            if (cn.GetAllCentroA().Count == 0 || cn.GetAllVacunas().Count() == 0)
+            {
+                MessageBox.Show("NO SE PUEDE APLICAR DOSIS , NO EXISTEN VACUNAS O CENTROS DE ASISTENCIA REGISTRADOS");
+                m.Fc.Show_Menu();
+                return;
+            }
+
+            m.Fc.Show_AplicarVacuna();
         }
     }
 }

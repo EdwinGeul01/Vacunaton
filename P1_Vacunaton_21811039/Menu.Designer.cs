@@ -30,9 +30,9 @@ namespace P1_Vacunaton_21811039
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label7 = new System.Windows.Forms.Label();
             this.btnAdminUser = new System.Windows.Forms.Button();
             this.btnAdminVacunas = new System.Windows.Forms.Button();
             this.btnAdminCentrosAsistencia = new System.Windows.Forms.Button();
@@ -44,7 +44,7 @@ namespace P1_Vacunaton_21811039
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Window;
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.flowLayoutPanel1);
@@ -54,17 +54,6 @@ namespace P1_Vacunaton_21811039
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 596);
             this.panel1.TabIndex = 3;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Image = global::P1_Vacunaton_21811039.Properties.Resources.logoname;
-            this.label7.Location = new System.Drawing.Point(458, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(237, 26);
-            this.label7.TabIndex = 5;
             // 
             // label4
             // 
@@ -92,6 +81,17 @@ namespace P1_Vacunaton_21811039
             this.flowLayoutPanel1.Size = new System.Drawing.Size(719, 458);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label7.Image = global::P1_Vacunaton_21811039.Properties.Resources.logoname;
+            this.label7.Location = new System.Drawing.Point(458, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(237, 26);
+            this.label7.TabIndex = 5;
+            // 
             // btnAdminUser
             // 
             this.btnAdminUser.BackColor = System.Drawing.Color.MidnightBlue;
@@ -104,7 +104,7 @@ namespace P1_Vacunaton_21811039
             this.btnAdminUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdminUser.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdminUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAdminUser.Image = global::P1_Vacunaton_21811039.Properties.Resources.users_resize;
+            this.btnAdminUser.Image = global::P1_Vacunaton_21811039.Properties.Resources.users_resizeWhite;
             this.btnAdminUser.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdminUser.Location = new System.Drawing.Point(53, 13);
             this.btnAdminUser.Name = "btnAdminUser";
@@ -127,7 +127,7 @@ namespace P1_Vacunaton_21811039
             this.btnAdminVacunas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdminVacunas.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdminVacunas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAdminVacunas.Image = global::P1_Vacunaton_21811039.Properties.Resources.vacunas;
+            this.btnAdminVacunas.Image = global::P1_Vacunaton_21811039.Properties.Resources.vacunas_white;
             this.btnAdminVacunas.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdminVacunas.Location = new System.Drawing.Point(53, 93);
             this.btnAdminVacunas.Name = "btnAdminVacunas";
@@ -150,7 +150,7 @@ namespace P1_Vacunaton_21811039
             this.btnAdminCentrosAsistencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdminCentrosAsistencia.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdminCentrosAsistencia.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAdminCentrosAsistencia.Image = global::P1_Vacunaton_21811039.Properties.Resources.centros_de_asistencia_;
+            this.btnAdminCentrosAsistencia.Image = global::P1_Vacunaton_21811039.Properties.Resources.centros_de_asistencia_white;
             this.btnAdminCentrosAsistencia.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdminCentrosAsistencia.Location = new System.Drawing.Point(53, 173);
             this.btnAdminCentrosAsistencia.Name = "btnAdminCentrosAsistencia";
@@ -173,7 +173,7 @@ namespace P1_Vacunaton_21811039
             this.btnAdminCiudadanos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdminCiudadanos.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdminCiudadanos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAdminCiudadanos.Image = global::P1_Vacunaton_21811039.Properties.Resources.ciudadanosR;
+            this.btnAdminCiudadanos.Image = global::P1_Vacunaton_21811039.Properties.Resources.ciudadanosR_white;
             this.btnAdminCiudadanos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdminCiudadanos.Location = new System.Drawing.Point(53, 253);
             this.btnAdminCiudadanos.Name = "btnAdminCiudadanos";
@@ -196,7 +196,7 @@ namespace P1_Vacunaton_21811039
             this.btnconsultas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnconsultas.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnconsultas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnconsultas.Image = global::P1_Vacunaton_21811039.Properties.Resources.consultaR;
+            this.btnconsultas.Image = global::P1_Vacunaton_21811039.Properties.Resources.consultaR_white;
             this.btnconsultas.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnconsultas.Location = new System.Drawing.Point(53, 333);
             this.btnconsultas.Name = "btnconsultas";

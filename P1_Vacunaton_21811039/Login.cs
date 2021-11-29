@@ -12,7 +12,7 @@ namespace P1_Vacunaton_21811039
 {
     public partial class Login : Form
     {
-        Conexion cn = new Conexion();
+        Conexion cn;
 
         public Login()
         {
@@ -21,12 +21,12 @@ namespace P1_Vacunaton_21811039
 
         private void Login_Load(object sender, EventArgs e)
         {
-            this.BackColor = Color.FromArgb(16,16,16);
+            panel1.BackColor = Color.FromArgb(16,16,16);
                 /*Color.FromArgb(255,49,28);*/
             this.Opacity = 0.95;
 
-            btnlogin.BackColor = Color.FromArgb(97, 174, 68);
-            btnexit.BackColor = Color.FromArgb(226, 70, 70);
+            //btnlogin.BackColor = Color.FromArgb(97, 174, 68);
+            //btnexit.BackColor = Color.FromArgb(226, 70, 70);
 
             txtpass.PasswordChar = '*';
 
@@ -44,14 +44,27 @@ namespace P1_Vacunaton_21811039
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            if(cn.Validar(txtuser.Text,txtpass.Text))
+            cn = new Conexion();
+
+            if (cn.Validar_Usuario(txtuser.Text,txtpass.Text))
             {
-                Main m = new Main(cn.Get_User(txtuser.Text));
+                Usuario u = cn.Get_User(txtuser.Text);
+                Main m = new Main(u,this);
                 m.StartPosition = FormStartPosition.CenterScreen;
                 m.Show();
                 this.Hide();
                 this.Enabled = false;
+            }else
+            {
+                MessageBox.Show("usuario o contraseña incorrectos!!");
             }
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            Sign_Up SignUp_ = new Sign_Up();
+            SignUp_.StartPosition = FormStartPosition.CenterScreen;
+            SignUp_.Show();
         }
     }
 }

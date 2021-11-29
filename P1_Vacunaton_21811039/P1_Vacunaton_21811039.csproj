@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aplicar Dosis\AplicarVacuna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aplicar Dosis\AplicarVacuna.Designer.cs">
+      <DependentUpon>AplicarVacuna.cs</DependentUpon>
+    </Compile>
     <Compile Include="CentroAsistencia.cs">
       <DependentUpon>VacunatonModel.tt</DependentUpon>
     </Compile>
@@ -132,6 +138,7 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="MdiChanges.cs" />
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +149,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="roles.cs">
       <DependentUpon>VacunatonModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sign_Up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign_Up.Designer.cs">
+      <DependentUpon>Sign_Up.cs</DependentUpon>
     </Compile>
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>VacunatonModel.tt</DependentUpon>
@@ -206,6 +219,9 @@
     <Compile Include="VacunaXCiudadanos.cs">
       <DependentUpon>VacunatonModel.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Aplicar Dosis\AplicarVacuna.resx">
+      <DependentUpon>AplicarVacuna.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Auxiliar\Options_Menu.resx">
       <DependentUpon>Options_Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -246,6 +262,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sign_Up.resx">
+      <DependentUpon>Sign_Up.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\User_Create.resx">
       <DependentUpon>User_Create.cs</DependentUpon>
@@ -292,6 +311,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="resources\user_panel.png" />
+    <None Include="resources\Sign_Up.png" />
+    <None Include="resources\users resizeWhite.png" />
+    <None Include="resources\vacunas_white.png" />
+    <None Include="resources\centros de asistencia_white.png" />
+    <None Include="resources\ciudadanosR_white.png" />
+    <None Include="resources\consultaR_white.png" />
     <Content Include="VacunatonModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>VacunatonModel.edmx</DependentUpon>
@@ -327,5 +353,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

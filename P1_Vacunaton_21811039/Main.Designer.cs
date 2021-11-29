@@ -48,10 +48,10 @@ namespace P1_Vacunaton_21811039
             this.menuStrip1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.menuStrip1.Enabled = false;
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(0);
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(190, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(0);
-            this.menuStrip1.Size = new System.Drawing.Size(950, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(760, 24);
             this.menuStrip1.Stretch = false;
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
@@ -60,10 +60,10 @@ namespace P1_Vacunaton_21811039
             // MainBar
             // 
             this.MainBar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.MainBar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.MainBar.BackColor = System.Drawing.Color.Gainsboro;
             this.MainBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.MainBar.ForeColor = System.Drawing.Color.Transparent;
-            this.MainBar.Location = new System.Drawing.Point(190, 0);
+            this.MainBar.Location = new System.Drawing.Point(190, 24);
             this.MainBar.Margin = new System.Windows.Forms.Padding(0);
             this.MainBar.Name = "MainBar";
             this.MainBar.Size = new System.Drawing.Size(760, 20);
@@ -75,7 +75,8 @@ namespace P1_Vacunaton_21811039
             // 
             // panel_user
             // 
-            this.panel_user.BackColor = System.Drawing.Color.Gray;
+            this.panel_user.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panel_user.BackgroundImage = global::P1_Vacunaton_21811039.Properties.Resources.user_panel;
             this.panel_user.Controls.Add(this.lbltipodeuser);
             this.panel_user.Controls.Add(this.btngohome);
             this.panel_user.Controls.Add(this.btnsalir);
@@ -123,11 +124,11 @@ namespace P1_Vacunaton_21811039
             this.btnsalir.FlatAppearance.BorderSize = 0;
             this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsalir.ForeColor = System.Drawing.Color.White;
-            this.btnsalir.Location = new System.Drawing.Point(17, 523);
+            this.btnsalir.Location = new System.Drawing.Point(-1, 513);
             this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Size = new System.Drawing.Size(149, 26);
+            this.btnsalir.Size = new System.Drawing.Size(131, 42);
             this.btnsalir.TabIndex = 6;
-            this.btnsalir.Text = "SALIR";
+            this.btnsalir.Text = "CERRAR SESION";
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
@@ -172,6 +173,7 @@ namespace P1_Vacunaton_21811039
             // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Image = global::P1_Vacunaton_21811039.Properties.Resources.ruser;
             this.label1.Location = new System.Drawing.Point(39, 29);
             this.label1.Name = "label1";
@@ -205,7 +207,6 @@ namespace P1_Vacunaton_21811039
 
         #endregion
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.Panel MainBar;
         private System.Windows.Forms.Panel panel_user;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
@@ -214,5 +215,6 @@ namespace P1_Vacunaton_21811039
         private System.Windows.Forms.Button btngohome;
         private System.Windows.Forms.Label lbltipodeuser;
         private System.Windows.Forms.Label lblnombre;
+        public System.Windows.Forms.Panel MainBar;
     }
 }

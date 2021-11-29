@@ -55,7 +55,6 @@ namespace P1_Vacunaton_21811039
             this.cbvacunas = new System.Windows.Forms.ComboBox();
             this.btncreate = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbltitle
@@ -249,7 +248,12 @@ namespace P1_Vacunaton_21811039
             // 
             // cbrol
             // 
+            this.cbrol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbrol.FormattingEnabled = true;
+            this.cbrol.Items.AddRange(new object[] {
+            "administrador",
+            "oficial medico",
+            "encargado de digitacion"});
             this.cbrol.Location = new System.Drawing.Point(352, 117);
             this.cbrol.Name = "cbrol";
             this.cbrol.Size = new System.Drawing.Size(221, 21);
@@ -262,12 +266,13 @@ namespace P1_Vacunaton_21811039
             this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label10.Location = new System.Drawing.Point(349, 141);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(184, 14);
+            this.label10.Size = new System.Drawing.Size(194, 14);
             this.label10.TabIndex = 32;
-            this.label10.Text = "CENTRO DE VACUNAS ENCARGADO";
+            this.label10.Text = "CENTRO DE ASISTENCIA ENCARGADO";
             // 
             // cbCentrovacunas
             // 
+            this.cbCentrovacunas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCentrovacunas.FormattingEnabled = true;
             this.cbCentrovacunas.Location = new System.Drawing.Point(352, 159);
             this.cbCentrovacunas.Name = "cbCentrovacunas";
@@ -287,6 +292,7 @@ namespace P1_Vacunaton_21811039
             // 
             // cbvacunas
             // 
+            this.cbvacunas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbvacunas.FormattingEnabled = true;
             this.cbvacunas.Location = new System.Drawing.Point(352, 208);
             this.cbvacunas.Name = "cbvacunas";
@@ -316,23 +322,11 @@ namespace P1_Vacunaton_21811039
             this.button2.Text = "CANCELAR";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(579, 371);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 23);
-            this.button3.TabIndex = 38;
-            this.button3.Text = "AYUDA";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
             // User_Create
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(776, 596);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btncreate);
             this.Controls.Add(this.cbvacunas);
@@ -362,6 +356,7 @@ namespace P1_Vacunaton_21811039
             this.Name = "User_Create";
             this.Text = "User_Create";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.User_Create_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -395,6 +390,5 @@ namespace P1_Vacunaton_21811039
         private System.Windows.Forms.ComboBox cbvacunas;
         private System.Windows.Forms.Button btncreate;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
     }
 }

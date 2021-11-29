@@ -29,46 +29,34 @@ namespace P1_Vacunaton_21811039
         /// </summary>
         private void InitializeComponent()
         {
-            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.btnmodf = new System.Windows.Forms.Button();
+            this.cbvacunasE = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbcentroA = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbrol = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txttelefono = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbfemn = new System.Windows.Forms.RadioButton();
+            this.rbmasc = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtnidentidad = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtcod = new System.Windows.Forms.TextBox();
             this.lbltitle = new System.Windows.Forms.Label();
             this.lbldirectory = new System.Windows.Forms.Label();
+            this.btnbuscar = new System.Windows.Forms.Button();
+            this.txtpass = new System.Windows.Forms.TextBox();
+            this.txtcorreo = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(581, 367);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 23);
-            this.button3.TabIndex = 65;
-            this.button3.Text = "AYUDA";
-            this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
@@ -81,24 +69,27 @@ namespace P1_Vacunaton_21811039
             this.button2.Text = "CANCELAR";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnmodf
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(475, 419);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(256, 86);
-            this.button1.TabIndex = 63;
-            this.button1.Text = "MODIFICAR";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnmodf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnmodf.Enabled = false;
+            this.btnmodf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnmodf.Location = new System.Drawing.Point(475, 419);
+            this.btnmodf.Name = "btnmodf";
+            this.btnmodf.Size = new System.Drawing.Size(256, 86);
+            this.btnmodf.TabIndex = 63;
+            this.btnmodf.Text = "MODIFICAR";
+            this.btnmodf.UseVisualStyleBackColor = false;
+            this.btnmodf.Click += new System.EventHandler(this.btnmodf_Click);
             // 
-            // comboBox3
+            // cbvacunasE
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(306, 252);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(221, 21);
-            this.comboBox3.TabIndex = 62;
+            this.cbvacunasE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbvacunasE.FormattingEnabled = true;
+            this.cbvacunasE.Location = new System.Drawing.Point(306, 252);
+            this.cbvacunasE.Name = "cbvacunasE";
+            this.cbvacunasE.Size = new System.Drawing.Size(221, 21);
+            this.cbvacunasE.TabIndex = 62;
             // 
             // label11
             // 
@@ -111,13 +102,14 @@ namespace P1_Vacunaton_21811039
             this.label11.TabIndex = 61;
             this.label11.Text = "VACUNAS ENCARGADO";
             // 
-            // comboBox2
+            // cbcentroA
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(306, 203);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(221, 21);
-            this.comboBox2.TabIndex = 60;
+            this.cbcentroA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbcentroA.FormattingEnabled = true;
+            this.cbcentroA.Location = new System.Drawing.Point(306, 203);
+            this.cbcentroA.Name = "cbcentroA";
+            this.cbcentroA.Size = new System.Drawing.Size(221, 21);
+            this.cbcentroA.TabIndex = 60;
             // 
             // label10
             // 
@@ -130,13 +122,19 @@ namespace P1_Vacunaton_21811039
             this.label10.TabIndex = 59;
             this.label10.Text = "CENTRO DE VACUNAS ENCARGADO";
             // 
-            // comboBox1
+            // cbrol
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(306, 161);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(221, 21);
-            this.comboBox1.TabIndex = 58;
+            this.cbrol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbrol.FormattingEnabled = true;
+            this.cbrol.Items.AddRange(new object[] {
+            "administrador",
+            "oficial medico",
+            "encargado de digitacion"});
+            this.cbrol.Location = new System.Drawing.Point(306, 161);
+            this.cbrol.Name = "cbrol";
+            this.cbrol.Size = new System.Drawing.Size(221, 21);
+            this.cbrol.TabIndex = 58;
+            this.cbrol.Tag = "";
             // 
             // label9
             // 
@@ -160,12 +158,12 @@ namespace P1_Vacunaton_21811039
             this.label8.TabIndex = 56;
             this.label8.Text = "TELEFONO";
             // 
-            // textBox6
+            // txttelefono
             // 
-            this.textBox6.Location = new System.Drawing.Point(354, 369);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(221, 20);
-            this.textBox6.TabIndex = 55;
+            this.txttelefono.Location = new System.Drawing.Point(354, 369);
+            this.txttelefono.Name = "txttelefono";
+            this.txttelefono.Size = new System.Drawing.Size(221, 20);
+            this.txttelefono.TabIndex = 55;
             // 
             // label6
             // 
@@ -178,34 +176,27 @@ namespace P1_Vacunaton_21811039
             this.label6.TabIndex = 54;
             this.label6.Text = "CORREO ELECTRONICO";
             // 
-            // textBox5
+            // rbfemn
             // 
-            this.textBox5.Location = new System.Drawing.Point(47, 369);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(268, 20);
-            this.textBox5.TabIndex = 53;
+            this.rbfemn.AutoSize = true;
+            this.rbfemn.Location = new System.Drawing.Point(163, 314);
+            this.rbfemn.Name = "rbfemn";
+            this.rbfemn.Size = new System.Drawing.Size(81, 17);
+            this.rbfemn.TabIndex = 52;
+            this.rbfemn.Text = "FEMENINO";
+            this.rbfemn.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbmasc
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(163, 314);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(81, 17);
-            this.radioButton2.TabIndex = 52;
-            this.radioButton2.Text = "FEMENINO";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(47, 314);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(88, 17);
-            this.radioButton1.TabIndex = 51;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "MASCULINO";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbmasc.AutoSize = true;
+            this.rbmasc.Checked = true;
+            this.rbmasc.Location = new System.Drawing.Point(47, 314);
+            this.rbmasc.Name = "rbmasc";
+            this.rbmasc.Size = new System.Drawing.Size(88, 17);
+            this.rbmasc.TabIndex = 51;
+            this.rbmasc.TabStop = true;
+            this.rbmasc.Text = "MASCULINO";
+            this.rbmasc.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -229,12 +220,12 @@ namespace P1_Vacunaton_21811039
             this.label4.TabIndex = 49;
             this.label4.Text = "NOMBRE COMPLETO";
             // 
-            // textBox4
+            // txtnombre
             // 
-            this.textBox4.Location = new System.Drawing.Point(47, 254);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(204, 20);
-            this.textBox4.TabIndex = 48;
+            this.txtnombre.Location = new System.Drawing.Point(47, 254);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(204, 20);
+            this.txtnombre.TabIndex = 48;
             // 
             // label3
             // 
@@ -247,12 +238,12 @@ namespace P1_Vacunaton_21811039
             this.label3.TabIndex = 47;
             this.label3.Text = "NUMERO DE IDENTIDAD";
             // 
-            // textBox3
+            // txtnidentidad
             // 
-            this.textBox3.Location = new System.Drawing.Point(47, 209);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(204, 20);
-            this.textBox3.TabIndex = 46;
+            this.txtnidentidad.Location = new System.Drawing.Point(47, 209);
+            this.txtnidentidad.Name = "txtnidentidad";
+            this.txtnidentidad.Size = new System.Drawing.Size(204, 20);
+            this.txtnidentidad.TabIndex = 46;
             // 
             // label2
             // 
@@ -265,13 +256,6 @@ namespace P1_Vacunaton_21811039
             this.label2.TabIndex = 45;
             this.label2.Text = "CONTRASEÑA";
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(47, 162);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(204, 20);
-            this.textBox2.TabIndex = 44;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -283,12 +267,13 @@ namespace P1_Vacunaton_21811039
             this.label1.TabIndex = 43;
             this.label1.Text = "CODIGO";
             // 
-            // textBox1
+            // txtcod
             // 
-            this.textBox1.Location = new System.Drawing.Point(89, 95);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(204, 20);
-            this.textBox1.TabIndex = 42;
+            this.txtcod.Location = new System.Drawing.Point(89, 95);
+            this.txtcod.Name = "txtcod";
+            this.txtcod.Size = new System.Drawing.Size(204, 20);
+            this.txtcod.TabIndex = 42;
+            this.txtcod.TextChanged += new System.EventHandler(this.txtcod_TextChanged);
             // 
             // lbltitle
             // 
@@ -315,6 +300,32 @@ namespace P1_Vacunaton_21811039
     "          ";
             this.lbldirectory.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // btnbuscar
+            // 
+            this.btnbuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnbuscar.Location = new System.Drawing.Point(299, 92);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(150, 23);
+            this.btnbuscar.TabIndex = 66;
+            this.btnbuscar.Text = "BUSCAR";
+            this.btnbuscar.UseVisualStyleBackColor = false;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
+            // 
+            // txtpass
+            // 
+            this.txtpass.Location = new System.Drawing.Point(47, 162);
+            this.txtpass.Name = "txtpass";
+            this.txtpass.Size = new System.Drawing.Size(204, 20);
+            this.txtpass.TabIndex = 44;
+            // 
+            // txtcorreo
+            // 
+            this.txtcorreo.Location = new System.Drawing.Point(47, 369);
+            this.txtcorreo.Name = "txtcorreo";
+            this.txtcorreo.Size = new System.Drawing.Size(268, 20);
+            this.txtcorreo.TabIndex = 53;
+            // 
             // label7
             // 
             this.label7.BackColor = System.Drawing.Color.Transparent;
@@ -326,87 +337,74 @@ namespace P1_Vacunaton_21811039
             this.label7.Size = new System.Drawing.Size(237, 26);
             this.label7.TabIndex = 40;
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(299, 92);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 23);
-            this.button4.TabIndex = 66;
-            this.button4.Text = "BUSCAR";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
             // User_Modf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(776, 596);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.btnmodf);
+            this.Controls.Add(this.cbvacunasE);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cbcentroA);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbrol);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txttelefono);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.txtcorreo);
+            this.Controls.Add(this.rbfemn);
+            this.Controls.Add(this.rbmasc);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtnidentidad);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtpass);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtcod);
             this.Controls.Add(this.lbltitle);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lbldirectory);
             this.Name = "User_Modf";
             this.Text = "User_Modf";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.User_Modf_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Button btnmodf;
+        private System.Windows.Forms.ComboBox cbvacunasE;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbcentroA;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbrol;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txttelefono;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbfemn;
+        private System.Windows.Forms.RadioButton rbmasc;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtnidentidad;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtcod;
         private System.Windows.Forms.Label lbltitle;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lbldirectory;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnbuscar;
+        private System.Windows.Forms.TextBox txtpass;
+        private System.Windows.Forms.TextBox txtcorreo;
     }
 }

@@ -27,16 +27,51 @@ namespace P1_Vacunaton_21811039
 
         private void btncreate_Click(object sender, EventArgs e)
         {
-            cn.CrearUsuario(txtcod.Text,
-                txtpass.Text,
-                txtnidentidad.Text,
-                txtnombre.Text,
-                "M",
-                txtcorreo.Text,
-                txttelefono.Text,
-                cbrol.Text, cbCentrovacunas.Text,
-                cbvacunas.Text
-                );
+            try
+            {
+                cn.CrearUsuario(txtcod.Text,
+                    txtpass.Text,
+                    txtnidentidad.Text,
+                    txtnombre.Text,
+                    rbmasc.Checked ? "M" : "F",
+                    txtcorreo.Text,
+                    txttelefono.Text,
+                    (cbrol.SelectedIndex + 1).ToString(),
+                    cbCentrovacunas.Text,
+                    cbvacunas.Text
+                    );
+
+
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+
+            
+        }
+
+        private void User_Create_Load(object sender, EventArgs e)
+        {
+           foreach(Vacunas v in cn.GetAllVacunas())
+            {
+                cbvacunas.Items.Add(v.nombre);
+            }
+
+           foreach(CentroAsistencia c in cn.GetAllCentroA())
+            {
+                cbCentrovacunas.Items.Add(c.Nombre);
+            }
+
+            cbrol.SelectedIndex = 0;
+
+
+
+            if(main.user_login.rol == "2")
+            {
+                cbrol.SelectedIndex = 2;
+                cbrol.Enabled = false;
+            }
         }
     }
 }

@@ -21,13 +21,13 @@ namespace P1_Vacunaton_21811039
         }
     
         public string idcentro { get; set; }
-        public string descripcion { get; set; }
         public string direccion { get; set; }
         public string ciudad { get; set; }
         public int numeroPacientes { get; set; }
         public Nullable<int> cantMedicos { get; set; }
         public Nullable<int> cantEnfermeras { get; set; }
         public string estatus { get; set; }
+        public string Nombre { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Usuario> Usuario { get; set; }

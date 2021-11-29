@@ -34,6 +34,8 @@ namespace P1_Vacunaton_21811039
         private Ciudadano_Modf ci_modf;
         private Ciudadano_Delete ci_delete;
 
+        //aplicar vacunas
+        private AplicarVacuna AplicarVacuna;
 
         public Forms_Controller(Main m)
         {
@@ -41,6 +43,11 @@ namespace P1_Vacunaton_21811039
         }
 
 
+        public void removeborder()
+        {
+
+            MdiChanges.removeborders(ref m);
+        }
 
 
         private void close_All_Mdi()
@@ -249,7 +256,7 @@ namespace P1_Vacunaton_21811039
             try
             {
                 close_All_Mdi();
-                ci_create = new Ciudadano_Create();
+                ci_create = new Ciudadano_Create(m);
                 ci_create.MdiParent = m;
                 ci_create.Show();
 
@@ -265,7 +272,7 @@ namespace P1_Vacunaton_21811039
             try
             {
                 close_All_Mdi();
-                ci_modf = new Ciudadano_Modf();
+                ci_modf = new Ciudadano_Modf(m);
                 ci_modf.MdiParent = m;
                 ci_modf.Show();
 
@@ -281,7 +288,7 @@ namespace P1_Vacunaton_21811039
             try
             {
                 close_All_Mdi();
-                ci_delete = new Ciudadano_Delete();
+                ci_delete = new Ciudadano_Delete(m);
                 ci_delete.MdiParent = m;
                 ci_delete.Show();
 
@@ -291,6 +298,27 @@ namespace P1_Vacunaton_21811039
                 MessageBox.Show(err.Message);
             }
         }
+
+        //CIUDADANOS X VACUNA
+
+        public void Show_AplicarVacuna()
+        {
+
+
+            try
+            {
+                close_All_Mdi();
+                AplicarVacuna = new AplicarVacuna(m);
+                AplicarVacuna.MdiParent = m;
+                AplicarVacuna.Show();
+
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+        }
+
 
     }
 }

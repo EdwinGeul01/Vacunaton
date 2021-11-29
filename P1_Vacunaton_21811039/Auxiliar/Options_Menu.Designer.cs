@@ -34,6 +34,7 @@ namespace P1_Vacunaton_21811039
             this.btncrear = new System.Windows.Forms.Button();
             this.btnmodificar = new System.Windows.Forms.Button();
             this.btneliminar = new System.Windows.Forms.Button();
+            this.btnAplicarDosis = new System.Windows.Forms.Button();
             this.btnreturnmenu = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.lbltitle = new System.Windows.Forms.Label();
@@ -59,9 +60,10 @@ namespace P1_Vacunaton_21811039
             this.flowLayoutPanel1.Controls.Add(this.btncrear);
             this.flowLayoutPanel1.Controls.Add(this.btnmodificar);
             this.flowLayoutPanel1.Controls.Add(this.btneliminar);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(27, 103);
+            this.flowLayoutPanel1.Controls.Add(this.btnAplicarDosis);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(27, 136);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(60, 80, 0, 0);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(60, 40, 0, 0);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(688, 392);
             this.flowLayoutPanel1.TabIndex = 6;
             // 
@@ -79,7 +81,7 @@ namespace P1_Vacunaton_21811039
             this.btncrear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btncrear.Image = global::P1_Vacunaton_21811039.Properties.Resources.crearR;
             this.btncrear.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btncrear.Location = new System.Drawing.Point(63, 83);
+            this.btncrear.Location = new System.Drawing.Point(63, 43);
             this.btncrear.Name = "btncrear";
             this.btncrear.Size = new System.Drawing.Size(177, 278);
             this.btncrear.TabIndex = 4;
@@ -101,7 +103,7 @@ namespace P1_Vacunaton_21811039
             this.btnmodificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnmodificar.Image = global::P1_Vacunaton_21811039.Properties.Resources.editR;
             this.btnmodificar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnmodificar.Location = new System.Drawing.Point(263, 83);
+            this.btnmodificar.Location = new System.Drawing.Point(263, 43);
             this.btnmodificar.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
             this.btnmodificar.Name = "btnmodificar";
             this.btnmodificar.Size = new System.Drawing.Size(177, 278);
@@ -124,13 +126,36 @@ namespace P1_Vacunaton_21811039
             this.btneliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btneliminar.Image = global::P1_Vacunaton_21811039.Properties.Resources.deleteR;
             this.btneliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btneliminar.Location = new System.Drawing.Point(463, 83);
+            this.btneliminar.Location = new System.Drawing.Point(463, 43);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(177, 278);
             this.btneliminar.TabIndex = 6;
             this.btneliminar.Text = "ELIMINAR";
             this.btneliminar.UseVisualStyleBackColor = false;
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
+            // 
+            // btnAplicarDosis
+            // 
+            this.btnAplicarDosis.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnAplicarDosis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAplicarDosis.Enabled = false;
+            this.btnAplicarDosis.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAplicarDosis.FlatAppearance.BorderSize = 0;
+            this.btnAplicarDosis.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnAplicarDosis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnAplicarDosis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnAplicarDosis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAplicarDosis.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAplicarDosis.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAplicarDosis.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAplicarDosis.Location = new System.Drawing.Point(63, 327);
+            this.btnAplicarDosis.Name = "btnAplicarDosis";
+            this.btnAplicarDosis.Size = new System.Drawing.Size(577, 65);
+            this.btnAplicarDosis.TabIndex = 7;
+            this.btnAplicarDosis.Text = "APLICAR DOSIS";
+            this.btnAplicarDosis.UseVisualStyleBackColor = false;
+            this.btnAplicarDosis.Visible = false;
+            this.btnAplicarDosis.Click += new System.EventHandler(this.btnAplicarDosis_Click);
             // 
             // btnreturnmenu
             // 
@@ -209,5 +234,6 @@ namespace P1_Vacunaton_21811039
         private System.Windows.Forms.Button btnreturnmenu;
         private System.Windows.Forms.Label lbltitle;
         private System.Windows.Forms.Panel panelimagesection;
+        private System.Windows.Forms.Button btnAplicarDosis;
     }
 }

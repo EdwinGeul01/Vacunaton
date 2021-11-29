@@ -26,7 +26,15 @@ namespace P1_Vacunaton_21811039
 
         private void Menu_Load(object sender, EventArgs e)
         {
-            switch(m.user_login.rol)
+            btnAdminUser.BackColor = Color.FromArgb(18, 83, 198);
+            btnAdminVacunas.BackColor = Color.FromArgb(18, 83, 198);
+            btnconsultas.BackColor = Color.FromArgb(18, 83, 198);
+            btnAdminCiudadanos.BackColor = Color.FromArgb(18, 83, 198);
+            btnAdminCentrosAsistencia.BackColor = Color.FromArgb(18, 83, 198);
+
+
+
+            switch (m.user_login.rol)
             {
                 case "1":
                     break;
