@@ -109,6 +109,13 @@ namespace P1_Vacunaton_21811039
                     u.IdVacunas = null;
                 }
             }
+            foreach (VacunaXCiudadanos u in db.VacunaXCiudadanos.ToList())
+            {
+                if (u.CodVacuna == vacuna.CodVacuna)
+                {
+                    u.CodVacuna = null;
+                }
+            }
 
 
             db.Vacunas.Remove(vacuna);
@@ -277,6 +284,13 @@ namespace P1_Vacunaton_21811039
                 }
             }
 
+            foreach (VacunaXCiudadanos u in db.VacunaXCiudadanos.ToList())
+            {
+                if (u.IdCentroAsistencia == CA.idcentro)
+                {
+                    u.IdCentroAsistencia = null;
+                }
+            }
 
             db.CentroAsistencia.Remove(CA);
             db.SaveChanges();
@@ -310,14 +324,15 @@ namespace P1_Vacunaton_21811039
             }
 
             int edad = DateTime.Now.Year - fechaNacimiento.Year;
-            if (DateTime.Now.Month > fechaNacimiento.Month)
+            if (DateTime.Now.Month < fechaNacimiento.Month)
             {
                 edad -= 1;
             }
-            else if(DateTime.Now.Month == fechaNacimiento.Month && DateTime.Now.Day > fechaNacimiento.Day)
+            else if (DateTime.Now.Month == fechaNacimiento.Month && DateTime.Now.Day < fechaNacimiento.Day)
             {
                 edad -= 1;
             }
+
 
 
 
@@ -510,11 +525,13 @@ namespace P1_Vacunaton_21811039
             try
             {
 
+                string cod_Vacc = Getvacuna4Name(cod_vac).CodVacuna;
+
                 db.VacunaXCiudadanos.Add(new VacunaXCiudadanos
                 {
                     IdCiudadano = idCiudadano,
-                    IdCentroAsistencia = id_centro,
-                    CodVacuna = Getvacuna4Name(cod_vac).CodVacuna,
+                    IdCentroAsistencia = GetCentroAsistencia4name(id_centro).idcentro,
+                    CodVacuna = cod_Vacc,
                     NumeroDosis = Convert.ToInt32(n_dosis),
                     Fecha_Aplicacion = fecha_aplicacion
 
@@ -532,6 +549,45 @@ namespace P1_Vacunaton_21811039
             }
           
 
+
+        }
+
+        public void EliminarVacunaXCiudadano(string idCiudadano, string n_dosis)
+        {
+            try
+            {
+
+            Ciudadanos ciu = GetCiudadano(idCiudadano);
+
+            if(ciu == null)
+            {
+                MessageBox.Show("ciudadano no encontrado");
+            }
+
+            if(n_dosis == "ALL")
+            {
+                ciu.VacunaXCiudadanos.Clear();
+            }
+            else
+            {
+                foreach (VacunaXCiudadanos ciuxvac in ciu.VacunaXCiudadanos)
+                {
+                    if (ciuxvac.NumeroDosis == Convert.ToInt32(n_dosis))
+                    {
+                        ciu.VacunaXCiudadanos.Remove(ciuxvac);
+                            break;
+                    }
+                }
+            }
+
+            db.SaveChanges();
+
+                MessageBox.Show("Registro De vacunacion Eliminado !!");
+            }
+            catch(Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
 
         }
 

@@ -49,6 +49,8 @@ namespace P1_Vacunaton_21811039
                     lbltitle.Text = "CIUDADANOS          ";
                     btnAplicarDosis.Enabled = true;
                     btnAplicarDosis.Visible = true;
+                    btneliminardosis.Enabled = true;
+                    btneliminardosis.Visible = true;
                     panelimagesection.BackgroundImage = global::P1_Vacunaton_21811039.Properties.Resources.ciudadanosR;
                     break;
  
@@ -62,7 +64,6 @@ namespace P1_Vacunaton_21811039
 
         private void Admin_User_Load(object sender, EventArgs e)
         {
-
         }
 
         private void btncrear_Click(object sender, EventArgs e)
@@ -137,6 +138,12 @@ namespace P1_Vacunaton_21811039
             }
 
             m.Fc.Show_AplicarVacuna();
+        }
+
+        private void btneliminardosis_Click(object sender, EventArgs e)
+        {
+       
+            m.Fc.Show_DeleteAplicarVacuna();
         }
     }
 }

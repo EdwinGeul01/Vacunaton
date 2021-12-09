@@ -27,6 +27,12 @@ namespace P1_Vacunaton_21811039
 
         private void btncreate_Click(object sender, EventArgs e)
         {
+            if(txtcod.Text == "")
+            {
+                MessageBox.Show("id no puede ser nulo!");
+                return;
+            }
+
             try
             {
                 cn.CrearUsuario(txtcod.Text,
@@ -72,6 +78,11 @@ namespace P1_Vacunaton_21811039
                 cbrol.SelectedIndex = 2;
                 cbrol.Enabled = false;
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            main.Fc.Show_Menu();
         }
     }
 }

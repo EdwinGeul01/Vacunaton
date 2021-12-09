@@ -30,9 +30,9 @@ namespace P1_Vacunaton_21811039
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label7 = new System.Windows.Forms.Label();
             this.btnAdminUser = new System.Windows.Forms.Button();
             this.btnAdminVacunas = new System.Windows.Forms.Button();
             this.btnAdminCentrosAsistencia = new System.Windows.Forms.Button();
@@ -54,6 +54,17 @@ namespace P1_Vacunaton_21811039
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 596);
             this.panel1.TabIndex = 3;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label7.Image = global::P1_Vacunaton_21811039.Properties.Resources.logoname;
+            this.label7.Location = new System.Drawing.Point(458, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(237, 26);
+            this.label7.TabIndex = 5;
             // 
             // label4
             // 
@@ -80,17 +91,6 @@ namespace P1_Vacunaton_21811039
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(50, 10, 0, 0);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(719, 458);
             this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Image = global::P1_Vacunaton_21811039.Properties.Resources.logoname;
-            this.label7.Location = new System.Drawing.Point(458, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(237, 26);
-            this.label7.TabIndex = 5;
             // 
             // btnAdminUser
             // 
@@ -205,6 +205,7 @@ namespace P1_Vacunaton_21811039
             this.btnconsultas.Text = "CONSULTAS";
             this.btnconsultas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnconsultas.UseVisualStyleBackColor = false;
+            this.btnconsultas.Click += new System.EventHandler(this.btnconsultas_Click);
             // 
             // Menu
             // 

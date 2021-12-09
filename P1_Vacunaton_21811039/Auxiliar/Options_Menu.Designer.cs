@@ -39,7 +39,10 @@ namespace P1_Vacunaton_21811039
             this.label7 = new System.Windows.Forms.Label();
             this.lbltitle = new System.Windows.Forms.Label();
             this.panelimagesection = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btneliminardosis = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbldirectory
@@ -56,15 +59,16 @@ namespace P1_Vacunaton_21811039
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.flowLayoutPanel1.Controls.Add(this.btncrear);
             this.flowLayoutPanel1.Controls.Add(this.btnmodificar);
             this.flowLayoutPanel1.Controls.Add(this.btneliminar);
             this.flowLayoutPanel1.Controls.Add(this.btnAplicarDosis);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(27, 136);
+            this.flowLayoutPanel1.Controls.Add(this.btneliminardosis);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(60, 40, 0, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(688, 392);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(688, 422);
             this.flowLayoutPanel1.TabIndex = 6;
             // 
             // btncrear
@@ -75,7 +79,7 @@ namespace P1_Vacunaton_21811039
             this.btncrear.FlatAppearance.BorderSize = 0;
             this.btncrear.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
             this.btncrear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PapayaWhip;
-            this.btncrear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Moccasin;
+            this.btncrear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(90)))));
             this.btncrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncrear.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncrear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -150,7 +154,7 @@ namespace P1_Vacunaton_21811039
             this.btnAplicarDosis.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnAplicarDosis.Location = new System.Drawing.Point(63, 327);
             this.btnAplicarDosis.Name = "btnAplicarDosis";
-            this.btnAplicarDosis.Size = new System.Drawing.Size(577, 65);
+            this.btnAplicarDosis.Size = new System.Drawing.Size(291, 65);
             this.btnAplicarDosis.TabIndex = 7;
             this.btnAplicarDosis.Text = "APLICAR DOSIS";
             this.btnAplicarDosis.UseVisualStyleBackColor = false;
@@ -159,13 +163,14 @@ namespace P1_Vacunaton_21811039
             // 
             // btnreturnmenu
             // 
-            this.btnreturnmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnreturnmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
             this.btnreturnmenu.FlatAppearance.BorderSize = 0;
+            this.btnreturnmenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.btnreturnmenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnreturnmenu.ForeColor = System.Drawing.Color.White;
-            this.btnreturnmenu.Location = new System.Drawing.Point(12, 33);
+            this.btnreturnmenu.Location = new System.Drawing.Point(27, 28);
             this.btnreturnmenu.Name = "btnreturnmenu";
-            this.btnreturnmenu.Size = new System.Drawing.Size(135, 23);
+            this.btnreturnmenu.Size = new System.Drawing.Size(158, 34);
             this.btnreturnmenu.TabIndex = 9;
             this.btnreturnmenu.Text = "REGRESAR AL MENU";
             this.btnreturnmenu.UseVisualStyleBackColor = false;
@@ -198,27 +203,61 @@ namespace P1_Vacunaton_21811039
             // 
             this.panelimagesection.BackgroundImage = global::P1_Vacunaton_21811039.Properties.Resources.consultaR;
             this.panelimagesection.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelimagesection.Location = new System.Drawing.Point(12, 521);
+            this.panelimagesection.Location = new System.Drawing.Point(12, 534);
             this.panelimagesection.Name = "panelimagesection";
-            this.panelimagesection.Size = new System.Drawing.Size(45, 44);
+            this.panelimagesection.Size = new System.Drawing.Size(32, 31);
             this.panelimagesection.TabIndex = 12;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.flowLayoutPanel1);
+            this.panel1.Location = new System.Drawing.Point(27, 99);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(688, 425);
+            this.panel1.TabIndex = 13;
+            // 
+            // btneliminardosis
+            // 
+            this.btneliminardosis.BackColor = System.Drawing.Color.Tomato;
+            this.btneliminardosis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btneliminardosis.Enabled = false;
+            this.btneliminardosis.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btneliminardosis.FlatAppearance.BorderSize = 0;
+            this.btneliminardosis.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btneliminardosis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Crimson;
+            this.btneliminardosis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSalmon;
+            this.btneliminardosis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btneliminardosis.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btneliminardosis.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btneliminardosis.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btneliminardosis.Location = new System.Drawing.Point(360, 327);
+            this.btneliminardosis.Name = "btneliminardosis";
+            this.btneliminardosis.Size = new System.Drawing.Size(280, 65);
+            this.btneliminardosis.TabIndex = 8;
+            this.btneliminardosis.Text = "ELIMINAR DOSIS";
+            this.btneliminardosis.UseVisualStyleBackColor = false;
+            this.btneliminardosis.Visible = false;
+            this.btneliminardosis.Click += new System.EventHandler(this.btneliminardosis_Click);
             // 
             // Admin_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(776, 596);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelimagesection);
-            this.Controls.Add(this.lbltitle);
             this.Controls.Add(this.btnreturnmenu);
+            this.Controls.Add(this.lbltitle);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lbldirectory);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Admin_User";
             this.Text = "Admin_User";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Admin_User_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -235,5 +274,7 @@ namespace P1_Vacunaton_21811039
         private System.Windows.Forms.Label lbltitle;
         private System.Windows.Forms.Panel panelimagesection;
         private System.Windows.Forms.Button btnAplicarDosis;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btneliminardosis;
     }
 }

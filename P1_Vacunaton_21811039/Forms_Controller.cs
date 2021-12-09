@@ -36,6 +36,7 @@ namespace P1_Vacunaton_21811039
 
         //aplicar vacunas
         private AplicarVacuna AplicarVacuna;
+        private Delete_RegVac DeleteAplicarVacuna;
 
         public Forms_Controller(Main m)
         {
@@ -318,7 +319,37 @@ namespace P1_Vacunaton_21811039
                 MessageBox.Show(err.Message);
             }
         }
+        public void Show_DeleteAplicarVacuna()
+        {
+              try
+            {
+                close_All_Mdi();
+                DeleteAplicarVacuna = new Delete_RegVac(m);
+                DeleteAplicarVacuna.MdiParent = m;
+                DeleteAplicarVacuna.Show();
 
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+        }
 
+        //consultas menu
+        public void Show_ConsultasMenu()
+        {
+            try
+            {
+                close_All_Mdi();
+                Menu_Consultas MConsult = new Menu_Consultas(m);
+                MConsult.MdiParent = m;
+                MConsult.Show();
+
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+        }
     }
 }

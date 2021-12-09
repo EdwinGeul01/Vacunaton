@@ -35,10 +35,10 @@ namespace P1_Vacunaton_21811039
             this.lbltipodeuser = new System.Windows.Forms.Label();
             this.btngohome = new System.Windows.Forms.Button();
             this.btnsalir = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.lblnombre = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel_user.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +63,7 @@ namespace P1_Vacunaton_21811039
             this.MainBar.BackColor = System.Drawing.Color.Gainsboro;
             this.MainBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.MainBar.ForeColor = System.Drawing.Color.Transparent;
-            this.MainBar.Location = new System.Drawing.Point(190, 24);
+            this.MainBar.Location = new System.Drawing.Point(190, 0);
             this.MainBar.Margin = new System.Windows.Forms.Padding(0);
             this.MainBar.Name = "MainBar";
             this.MainBar.Size = new System.Drawing.Size(760, 20);
@@ -105,14 +105,15 @@ namespace P1_Vacunaton_21811039
             // 
             // btngohome
             // 
-            this.btngohome.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btngohome.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.btngohome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btngohome.FlatAppearance.BorderSize = 0;
+            this.btngohome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGreen;
             this.btngohome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btngohome.ForeColor = System.Drawing.Color.Honeydew;
-            this.btngohome.Location = new System.Drawing.Point(0, 252);
+            this.btngohome.Location = new System.Drawing.Point(0, 274);
             this.btngohome.Name = "btngohome";
-            this.btngohome.Size = new System.Drawing.Size(190, 26);
+            this.btngohome.Size = new System.Drawing.Size(190, 37);
             this.btngohome.TabIndex = 7;
             this.btngohome.Text = "MENU";
             this.btngohome.UseVisualStyleBackColor = false;
@@ -131,21 +132,6 @@ namespace P1_Vacunaton_21811039
             this.btnsalir.Text = "CERRAR SESION";
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Orange;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.button6.Location = new System.Drawing.Point(-1, 284);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(191, 24);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "OPCIONES PERFIL";
-            this.button6.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -180,6 +166,22 @@ namespace P1_Vacunaton_21811039
             this.label1.Size = new System.Drawing.Size(109, 104);
             this.label1.TabIndex = 1;
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.button6.Location = new System.Drawing.Point(-1, 327);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(191, 36);
+            this.button6.TabIndex = 4;
+            this.button6.Text = "OPCIONES PERFIL";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -211,10 +213,10 @@ namespace P1_Vacunaton_21811039
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnsalir;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button btngohome;
         private System.Windows.Forms.Label lbltipodeuser;
         private System.Windows.Forms.Label lblnombre;
         public System.Windows.Forms.Panel MainBar;
+        private System.Windows.Forms.Button button6;
     }
 }

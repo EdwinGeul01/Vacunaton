@@ -82,5 +82,10 @@ namespace P1_Vacunaton_21811039
         {
             m.Fc.Show_Option_Menu(4);
         }
+
+        private void btnconsultas_Click(object sender, EventArgs e)
+        {
+            m.Fc.Show_ConsultasMenu();
+        }
     }
 }

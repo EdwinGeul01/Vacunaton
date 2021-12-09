@@ -60,7 +60,7 @@ namespace P1_Vacunaton_21811039
             this.btnlogin.BackColor = System.Drawing.Color.Transparent;
             this.btnlogin.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
             this.btnlogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnlogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
+            this.btnlogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogin.ForeColor = System.Drawing.Color.LimeGreen;
@@ -102,7 +102,7 @@ namespace P1_Vacunaton_21811039
             this.btnexit.BackColor = System.Drawing.Color.Transparent;
             this.btnexit.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnexit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnexit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
+            this.btnexit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.btnexit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnexit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnexit.ForeColor = System.Drawing.Color.Red;
