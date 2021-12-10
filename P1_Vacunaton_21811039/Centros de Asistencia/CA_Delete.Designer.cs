@@ -157,6 +157,7 @@ namespace P1_Vacunaton_21811039
             this.button2.TabIndex = 108;
             this.button2.Text = "CANCELAR";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btneliminar
             // 

@@ -30,10 +30,15 @@ namespace P1_Vacunaton_21811039
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource5 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource6 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource7 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource8 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource13 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource14 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource15 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource16 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.VacunaXCiudadanosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.VacunatonDataSet = new P1_Vacunaton_21811039.VacunatonDataSet();
+            this.CiudadanosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.VacunasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.CentroAsistenciaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtid = new System.Windows.Forms.TextBox();
@@ -46,24 +51,44 @@ namespace P1_Vacunaton_21811039
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.VacunatonDataSet = new P1_Vacunaton_21811039.VacunatonDataSet();
-            this.VacunaXCiudadanosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.VacunaXCiudadanosTableAdapter = new P1_Vacunaton_21811039.VacunatonDataSetTableAdapters.VacunaXCiudadanosTableAdapter();
-            this.CiudadanosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.CiudadanosTableAdapter = new P1_Vacunaton_21811039.VacunatonDataSetTableAdapters.CiudadanosTableAdapter();
-            this.VacunasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.VacunasTableAdapter = new P1_Vacunaton_21811039.VacunatonDataSetTableAdapters.VacunasTableAdapter();
-            this.CentroAsistenciaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.CentroAsistenciaTableAdapter = new P1_Vacunaton_21811039.VacunatonDataSetTableAdapters.CentroAsistenciaTableAdapter();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.VacunatonDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.VacunaXCiudadanosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VacunatonDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CiudadanosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.VacunasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CentroAsistenciaBindingSource)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // VacunaXCiudadanosBindingSource
+            // 
+            this.VacunaXCiudadanosBindingSource.DataMember = "VacunaXCiudadanos";
+            this.VacunaXCiudadanosBindingSource.DataSource = this.VacunatonDataSet;
+            // 
+            // VacunatonDataSet
+            // 
+            this.VacunatonDataSet.DataSetName = "VacunatonDataSet";
+            this.VacunatonDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // CiudadanosBindingSource
+            // 
+            this.CiudadanosBindingSource.DataMember = "Ciudadanos";
+            this.CiudadanosBindingSource.DataSource = this.VacunatonDataSet;
+            // 
+            // VacunasBindingSource
+            // 
+            this.VacunasBindingSource.DataMember = "Vacunas";
+            this.VacunasBindingSource.DataSource = this.VacunatonDataSet;
+            // 
+            // CentroAsistenciaBindingSource
+            // 
+            this.CentroAsistenciaBindingSource.DataMember = "CentroAsistencia";
+            this.CentroAsistenciaBindingSource.DataSource = this.VacunatonDataSet;
             // 
             // panel1
             // 
@@ -109,6 +134,7 @@ namespace P1_Vacunaton_21811039
             this.cbid.TabIndex = 2;
             this.cbid.Text = "ID";
             this.cbid.UseVisualStyleBackColor = true;
+            this.cbid.CheckedChanged += new System.EventHandler(this.cbid_CheckedChanged);
             // 
             // txtdosis
             // 
@@ -126,6 +152,7 @@ namespace P1_Vacunaton_21811039
             this.btnbuscar.TabIndex = 94;
             this.btnbuscar.Text = "BUSCAR";
             this.btnbuscar.UseVisualStyleBackColor = false;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
             // cbdosis
             // 
@@ -137,6 +164,7 @@ namespace P1_Vacunaton_21811039
             this.cbdosis.TabIndex = 4;
             this.cbdosis.Text = "N Dosis";
             this.cbdosis.UseVisualStyleBackColor = true;
+            this.cbdosis.CheckedChanged += new System.EventHandler(this.cbdosis_CheckedChanged);
             // 
             // dpfechaapli
             // 
@@ -157,6 +185,7 @@ namespace P1_Vacunaton_21811039
             this.cbfecha.TabIndex = 6;
             this.cbfecha.Text = "FECHA A.";
             this.cbfecha.UseVisualStyleBackColor = true;
+            this.cbfecha.CheckedChanged += new System.EventHandler(this.cbfecha_CheckedChanged);
             // 
             // label1
             // 
@@ -181,18 +210,18 @@ namespace P1_Vacunaton_21811039
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource5.Name = "VxCiudadano";
-            reportDataSource5.Value = this.VacunaXCiudadanosBindingSource;
-            reportDataSource6.Name = "Ciudadanos";
-            reportDataSource6.Value = this.CiudadanosBindingSource;
-            reportDataSource7.Name = "Vacunas";
-            reportDataSource7.Value = this.VacunasBindingSource;
-            reportDataSource8.Name = "CentrodeA";
-            reportDataSource8.Value = this.CentroAsistenciaBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource5);
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource6);
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource7);
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource8);
+            reportDataSource13.Name = "VxCiudadano";
+            reportDataSource13.Value = this.VacunaXCiudadanosBindingSource;
+            reportDataSource14.Name = "Ciudadanos";
+            reportDataSource14.Value = this.CiudadanosBindingSource;
+            reportDataSource15.Name = "Vacunas";
+            reportDataSource15.Value = this.VacunasBindingSource;
+            reportDataSource16.Name = "CentrodeA";
+            reportDataSource16.Value = this.CentroAsistenciaBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource13);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource14);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource15);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource16);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "P1_Vacunaton_21811039.Consultas.VacunasXCiudadanos_C.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
@@ -200,42 +229,17 @@ namespace P1_Vacunaton_21811039
             this.reportViewer1.Size = new System.Drawing.Size(1141, 517);
             this.reportViewer1.TabIndex = 0;
             // 
-            // VacunatonDataSet
-            // 
-            this.VacunatonDataSet.DataSetName = "VacunatonDataSet";
-            this.VacunatonDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // VacunaXCiudadanosBindingSource
-            // 
-            this.VacunaXCiudadanosBindingSource.DataMember = "VacunaXCiudadanos";
-            this.VacunaXCiudadanosBindingSource.DataSource = this.VacunatonDataSet;
-            // 
             // VacunaXCiudadanosTableAdapter
             // 
             this.VacunaXCiudadanosTableAdapter.ClearBeforeFill = true;
-            // 
-            // CiudadanosBindingSource
-            // 
-            this.CiudadanosBindingSource.DataMember = "Ciudadanos";
-            this.CiudadanosBindingSource.DataSource = this.VacunatonDataSet;
             // 
             // CiudadanosTableAdapter
             // 
             this.CiudadanosTableAdapter.ClearBeforeFill = true;
             // 
-            // VacunasBindingSource
-            // 
-            this.VacunasBindingSource.DataMember = "Vacunas";
-            this.VacunasBindingSource.DataSource = this.VacunatonDataSet;
-            // 
             // VacunasTableAdapter
             // 
             this.VacunasTableAdapter.ClearBeforeFill = true;
-            // 
-            // CentroAsistenciaBindingSource
-            // 
-            this.CentroAsistenciaBindingSource.DataMember = "CentroAsistencia";
-            this.CentroAsistenciaBindingSource.DataSource = this.VacunatonDataSet;
             // 
             // CentroAsistenciaTableAdapter
             // 
@@ -251,16 +255,16 @@ namespace P1_Vacunaton_21811039
             this.Name = "Report_VacunasXCiuda_C";
             this.Text = "Report_VacunasXCiuda_C";
             this.Load += new System.EventHandler(this.Report_VacunasXCiuda_C_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.VacunaXCiudadanosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VacunatonDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CiudadanosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VacunasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CentroAsistenciaBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.VacunatonDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.VacunaXCiudadanosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CiudadanosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.VacunasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CentroAsistenciaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

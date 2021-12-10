@@ -103,12 +103,13 @@ namespace P1_Vacunaton_21811039
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(-3, 556);
+            this.button2.Location = new System.Drawing.Point(47, 428);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 38);
+            this.button2.Size = new System.Drawing.Size(256, 38);
             this.button2.TabIndex = 85;
             this.button2.Text = "CANCELAR";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnmodf
             // 
@@ -117,7 +118,7 @@ namespace P1_Vacunaton_21811039
             this.btnmodf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnmodf.Location = new System.Drawing.Point(47, 356);
             this.btnmodf.Name = "btnmodf";
-            this.btnmodf.Size = new System.Drawing.Size(256, 86);
+            this.btnmodf.Size = new System.Drawing.Size(256, 66);
             this.btnmodf.TabIndex = 84;
             this.btnmodf.Text = "MODIFICAR";
             this.btnmodf.UseVisualStyleBackColor = false;

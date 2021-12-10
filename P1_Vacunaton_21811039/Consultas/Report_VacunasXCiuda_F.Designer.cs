@@ -46,20 +46,20 @@ namespace P1_Vacunaton_21811039
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.VacunatonDataSet = new P1_Vacunaton_21811039.VacunatonDataSet();
             this.VacunaXCiudadanosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.VacunaXCiudadanosTableAdapter = new P1_Vacunaton_21811039.VacunatonDataSetTableAdapters.VacunaXCiudadanosTableAdapter();
+            this.VacunatonDataSet = new P1_Vacunaton_21811039.VacunatonDataSet();
             this.CiudadanosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.CiudadanosTableAdapter = new P1_Vacunaton_21811039.VacunatonDataSetTableAdapters.CiudadanosTableAdapter();
             this.VacunasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.VacunasTableAdapter = new P1_Vacunaton_21811039.VacunatonDataSetTableAdapters.VacunasTableAdapter();
             this.CentroAsistenciaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.VacunaXCiudadanosTableAdapter = new P1_Vacunaton_21811039.VacunatonDataSetTableAdapters.VacunaXCiudadanosTableAdapter();
+            this.CiudadanosTableAdapter = new P1_Vacunaton_21811039.VacunatonDataSetTableAdapters.CiudadanosTableAdapter();
+            this.VacunasTableAdapter = new P1_Vacunaton_21811039.VacunatonDataSetTableAdapters.VacunasTableAdapter();
             this.CentroAsistenciaTableAdapter = new P1_Vacunaton_21811039.VacunatonDataSetTableAdapters.CentroAsistenciaTableAdapter();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.VacunatonDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.VacunaXCiudadanosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VacunatonDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CiudadanosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.VacunasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CentroAsistenciaBindingSource)).BeginInit();
@@ -103,7 +103,7 @@ namespace P1_Vacunaton_21811039
             // 
             this.cbid.AutoSize = true;
             this.cbid.ForeColor = System.Drawing.Color.White;
-            this.cbid.Location = new System.Drawing.Point(54, 21);
+            this.cbid.Location = new System.Drawing.Point(55, 23);
             this.cbid.Name = "cbid";
             this.cbid.Size = new System.Drawing.Size(37, 17);
             this.cbid.TabIndex = 2;
@@ -200,42 +200,42 @@ namespace P1_Vacunaton_21811039
             this.reportViewer1.Size = new System.Drawing.Size(1141, 517);
             this.reportViewer1.TabIndex = 0;
             // 
-            // VacunatonDataSet
-            // 
-            this.VacunatonDataSet.DataSetName = "VacunatonDataSet";
-            this.VacunatonDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // VacunaXCiudadanosBindingSource
             // 
             this.VacunaXCiudadanosBindingSource.DataMember = "VacunaXCiudadanos";
             this.VacunaXCiudadanosBindingSource.DataSource = this.VacunatonDataSet;
             // 
-            // VacunaXCiudadanosTableAdapter
+            // VacunatonDataSet
             // 
-            this.VacunaXCiudadanosTableAdapter.ClearBeforeFill = true;
+            this.VacunatonDataSet.DataSetName = "VacunatonDataSet";
+            this.VacunatonDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // CiudadanosBindingSource
             // 
             this.CiudadanosBindingSource.DataMember = "Ciudadanos";
             this.CiudadanosBindingSource.DataSource = this.VacunatonDataSet;
             // 
-            // CiudadanosTableAdapter
-            // 
-            this.CiudadanosTableAdapter.ClearBeforeFill = true;
-            // 
             // VacunasBindingSource
             // 
             this.VacunasBindingSource.DataMember = "Vacunas";
             this.VacunasBindingSource.DataSource = this.VacunatonDataSet;
             // 
-            // VacunasTableAdapter
-            // 
-            this.VacunasTableAdapter.ClearBeforeFill = true;
-            // 
             // CentroAsistenciaBindingSource
             // 
             this.CentroAsistenciaBindingSource.DataMember = "CentroAsistencia";
             this.CentroAsistenciaBindingSource.DataSource = this.VacunatonDataSet;
+            // 
+            // VacunaXCiudadanosTableAdapter
+            // 
+            this.VacunaXCiudadanosTableAdapter.ClearBeforeFill = true;
+            // 
+            // CiudadanosTableAdapter
+            // 
+            this.CiudadanosTableAdapter.ClearBeforeFill = true;
+            // 
+            // VacunasTableAdapter
+            // 
+            this.VacunasTableAdapter.ClearBeforeFill = true;
             // 
             // CentroAsistenciaTableAdapter
             // 
@@ -256,8 +256,8 @@ namespace P1_Vacunaton_21811039
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.VacunatonDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VacunaXCiudadanosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VacunatonDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CiudadanosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VacunasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CentroAsistenciaBindingSource)).EndInit();

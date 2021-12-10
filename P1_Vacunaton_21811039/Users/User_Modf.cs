@@ -114,5 +114,10 @@ namespace P1_Vacunaton_21811039
                 cbrol.Enabled = false;
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Main.Fc.Show_Menu();
+        }
     }
 }

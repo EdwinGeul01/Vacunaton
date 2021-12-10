@@ -24,5 +24,27 @@ namespace P1_Vacunaton_21811039
 
             this.reportViewer1.RefreshReport();
         }
+
+        private void cbidname_CheckedChanged(object sender, EventArgs e)
+        {
+            txtinfo.Enabled = !txtinfo.Enabled;
+        }
+
+        private void btnbuscar_Click(object sender, EventArgs e)
+        {
+           if(cbidname.Checked)
+            {
+                this.EnfermedadesBasesTableAdapter.FillBy(this.VacunatonDataSet.EnfermedadesBases,txtinfo.Text);
+                this.reportViewer1.RefreshReport();
+
+            }
+            else
+            {
+                this.EnfermedadesBasesTableAdapter.Fill(this.VacunatonDataSet.EnfermedadesBases);
+
+                this.reportViewer1.RefreshReport();
+
+            }
+        }
     }
 }

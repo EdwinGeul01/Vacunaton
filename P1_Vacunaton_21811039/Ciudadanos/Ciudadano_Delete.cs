@@ -62,5 +62,11 @@ namespace P1_Vacunaton_21811039
 
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            main.Fc.Show_Menu();
+        }
     }
 }

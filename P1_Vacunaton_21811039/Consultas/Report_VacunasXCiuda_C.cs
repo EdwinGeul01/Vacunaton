@@ -31,5 +31,60 @@ namespace P1_Vacunaton_21811039
             this.reportViewer1.RefreshReport();
             this.reportViewer1.RefreshReport();
         }
+
+        private void cbid_CheckedChanged(object sender, EventArgs e)
+        {
+            cbdosis.Checked = false;
+            cbfecha.Checked = false;
+        }
+
+        private void cbdosis_CheckedChanged(object sender, EventArgs e)
+        {
+            cbfecha.Checked = false;
+            cbid.Checked = false;
+        }
+
+        private void cbfecha_CheckedChanged(object sender, EventArgs e)
+        {
+            cbdosis.Checked = false;
+            cbid.Checked = false;
+        }
+
+        private void btnbuscar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                var temp = this.VacunatonDataSet.VacunaXCiudadanos;
+                if (cbid.Checked)
+                {
+                    VacunaXCiudadanosTableAdapter.GetById(temp, txtid.Text);
+                    temp = VacunaXCiudadanosTableAdapter.GetData();
+                }
+
+
+                if (cbdosis.Checked)
+                {
+                    VacunaXCiudadanosTableAdapter.FindDosis(temp, Convert.ToInt32(txtdosis.Text));
+                    temp = VacunaXCiudadanosTableAdapter.GetData();
+                }
+
+
+                if (cbfecha.Checked)
+                {
+                    VacunaXCiudadanosTableAdapter.FindByDate(temp, dpfechaapli.Value.ToString());
+                    temp = VacunaXCiudadanosTableAdapter.GetData();
+                }
+                this.VacunaXCiudadanosTableAdapter.Fill(temp);
+                this.reportViewer1.RefreshReport();
+
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+
+
+        }
     }
 }

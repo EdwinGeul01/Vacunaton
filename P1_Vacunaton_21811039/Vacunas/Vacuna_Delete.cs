@@ -15,8 +15,9 @@ namespace P1_Vacunaton_21811039
         Conexion cn = new Conexion();
         Main main;
         Vacunas vacuna;
-        public Vacuna_Delete()
+        public Vacuna_Delete(Main m)
         {
+            main = m;
             InitializeComponent();
         }
 
@@ -74,6 +75,11 @@ namespace P1_Vacunaton_21811039
         {
             btneliminar.Enabled = false;
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            main.Fc.Show_Menu();
         }
     }
 }

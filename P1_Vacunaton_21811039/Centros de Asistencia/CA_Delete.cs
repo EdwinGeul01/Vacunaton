@@ -14,9 +14,12 @@ namespace P1_Vacunaton_21811039
     {
         Conexion cn = new Conexion();
         CentroAsistencia CA;
+        Main m;
 
-        public CA_Delete()
+
+        public CA_Delete(Main m)
         {
+            this.m = m;
             InitializeComponent();
         }
 
@@ -61,6 +64,11 @@ namespace P1_Vacunaton_21811039
         private void txtid_TextChanged(object sender, EventArgs e)
         {
             btneliminar.Enabled = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            m.Fc.Show_Menu();
         }
     }
 }

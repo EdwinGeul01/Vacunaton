@@ -24,5 +24,26 @@ namespace P1_Vacunaton_21811039
 
             this.reportViewer1.RefreshReport();
         }
+
+        private void btnbuscar_Click(object sender, EventArgs e)
+        {
+
+            if(cbidname.Checked)
+            {
+                this.CentroAsistenciaTableAdapter.FillById(this.VacunatonDataSet.CentroAsistencia,txtinfo.Text);
+                this.reportViewer1.RefreshReport();
+            }
+            else
+            {
+                this.CentroAsistenciaTableAdapter.Fill(this.VacunatonDataSet.CentroAsistencia);
+                this.reportViewer1.RefreshReport();
+            }
+        }
+
+        private void cbidname_CheckedChanged(object sender, EventArgs e)
+        {
+            txtinfo.Enabled = !txtinfo.Enabled;
+        }
     }
-}
+    }
+

@@ -52,5 +52,10 @@ namespace P1_Vacunaton_21811039
             Enfermedades_list EFL = new Enfermedades_list(lvEnfermedades);
             EFL.Show();
         }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+           main.Fc.Show_Menu();
+        }
     }
 }

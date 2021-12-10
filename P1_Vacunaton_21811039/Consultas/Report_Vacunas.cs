@@ -25,5 +25,29 @@ namespace P1_Vacunaton_21811039
             this.reportViewer1.RefreshReport();
             this.reportViewer1.RefreshReport();
         }
+
+        private void cbidname_CheckedChanged(object sender, EventArgs e)
+        {
+            txtinfo.Enabled = !txtinfo.Enabled;
+        }
+
+        private void btnbuscar_Click(object sender, EventArgs e)
+        {
+            if (cbidname.Checked)
+            {
+                this.VacunasTableAdapter.FillBy(this.VacunatonDataSet.Vacunas, txtinfo.Text);
+                this.reportViewer1.RefreshReport();
+
+            }
+            else
+            {
+                this.VacunasTableAdapter.Fill(this.VacunatonDataSet.Vacunas);
+
+                this.reportViewer1.RefreshReport();
+
+            }
+        }
+
+      
     }
 }

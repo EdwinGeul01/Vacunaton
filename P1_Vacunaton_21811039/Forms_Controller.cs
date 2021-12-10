@@ -153,7 +153,7 @@ namespace P1_Vacunaton_21811039
             try
             {
                 close_All_Mdi();
-                ca_create = new CA_Create();
+                ca_create = new CA_Create(m);
                 ca_create.MdiParent = m;
                 ca_create.Show();
 
@@ -171,7 +171,7 @@ namespace P1_Vacunaton_21811039
             try
             {
                 close_All_Mdi();
-                ca_Modf = new CA_Modf();
+                ca_Modf = new CA_Modf(m);
                 ca_Modf.MdiParent = m;
                 ca_Modf.Show();
 
@@ -187,7 +187,7 @@ namespace P1_Vacunaton_21811039
             try
             {
                 close_All_Mdi();
-                ca_Delete = new CA_Delete();
+                ca_Delete = new CA_Delete(m);
                 ca_Delete.MdiParent = m;
                 ca_Delete.Show();
 
@@ -205,7 +205,7 @@ namespace P1_Vacunaton_21811039
             try
             {
                 close_All_Mdi();
-                va_create = new Vacuna_Create();
+                va_create = new Vacuna_Create(m);
                 va_create.MdiParent = m;
                 va_create.Show();
 
@@ -222,7 +222,7 @@ namespace P1_Vacunaton_21811039
             try
             {
                 close_All_Mdi();
-                va_modf = new Vacuna_Modf();
+                va_modf = new Vacuna_Modf(m);
                 va_modf.MdiParent = m;
                 va_modf.Show();
 
@@ -238,7 +238,7 @@ namespace P1_Vacunaton_21811039
             try
             {
                 close_All_Mdi();
-                va_delt = new Vacuna_Delete();
+                va_delt = new Vacuna_Delete(m);
                 va_delt.MdiParent = m;
                 va_delt.Show();
 

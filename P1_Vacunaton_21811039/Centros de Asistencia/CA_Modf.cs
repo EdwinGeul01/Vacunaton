@@ -14,9 +14,10 @@ namespace P1_Vacunaton_21811039
     {
         Conexion cn = new Conexion();
         CentroAsistencia CA;
-
-        public CA_Modf()
+        Main m;
+        public CA_Modf(Main m)
         {
+            this.m = m;
             InitializeComponent();
         }
 
@@ -73,6 +74,11 @@ namespace P1_Vacunaton_21811039
         {
             btnmodificar.Enabled = false;
 
+        }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            m.Fc.Show_Menu();
         }
     }
 }

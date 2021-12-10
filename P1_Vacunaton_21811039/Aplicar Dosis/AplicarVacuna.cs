@@ -98,5 +98,10 @@ namespace P1_Vacunaton_21811039
 
 
         }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            main.Fc.Show_Menu();
+        }
     }
 }

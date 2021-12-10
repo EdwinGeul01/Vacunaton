@@ -13,9 +13,10 @@ namespace P1_Vacunaton_21811039
     public partial class CA_Create : Form
     {
         Conexion cn = new Conexion();
-
-        public CA_Create()
+        Main m;
+        public CA_Create(Main m)
         {
+            this.m = m;
             InitializeComponent();
         }
 
@@ -43,6 +44,11 @@ namespace P1_Vacunaton_21811039
 
                 MessageBox.Show(err.Message);
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            m.Fc.Show_Menu();
         }
     }
 }

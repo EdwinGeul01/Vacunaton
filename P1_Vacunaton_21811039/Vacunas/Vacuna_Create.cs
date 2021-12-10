@@ -16,8 +16,9 @@ namespace P1_Vacunaton_21811039
         Conexion cn = new Conexion();
         Main main;
         Vacunas vacuna;
-        public Vacuna_Create()
+        public Vacuna_Create(Main m)
         {
+            main = m;
             InitializeComponent();
         }
 
@@ -42,6 +43,11 @@ namespace P1_Vacunaton_21811039
                 MessageBox.Show(err.Message);
             }
          
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            main.Fc.Show_Menu();
         }
     }
 }

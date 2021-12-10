@@ -192,6 +192,7 @@ namespace P1_Vacunaton_21811039
             this.btncancelar.TabIndex = 95;
             this.btncancelar.Text = "CANCELAR";
             this.btncancelar.UseVisualStyleBackColor = true;
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
             // cbCentrovacunas
             // 

@@ -59,5 +59,11 @@ namespace P1_Vacunaton_21811039
             this.reportViewer1.RefreshReport();
 
         }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            m.Fc.Show_Menu();
+
+        }
     }
 }

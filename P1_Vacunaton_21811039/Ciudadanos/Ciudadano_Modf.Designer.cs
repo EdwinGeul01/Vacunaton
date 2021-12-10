@@ -30,7 +30,7 @@ namespace P1_Vacunaton_21811039
         private void InitializeComponent()
         {
             this.dpfechanec = new System.Windows.Forms.DateTimePicker();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btncancelar = new System.Windows.Forms.Button();
             this.btnmodificar = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -64,16 +64,17 @@ namespace P1_Vacunaton_21811039
             this.dpfechanec.Size = new System.Drawing.Size(253, 20);
             this.dpfechanec.TabIndex = 91;
             // 
-            // button2
+            // btncancelar
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(-3, 556);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 38);
-            this.button2.TabIndex = 90;
-            this.button2.Text = "CANCELAR";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btncancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btncancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncancelar.Location = new System.Drawing.Point(47, 480);
+            this.btncancelar.Name = "btncancelar";
+            this.btncancelar.Size = new System.Drawing.Size(256, 38);
+            this.btncancelar.TabIndex = 90;
+            this.btncancelar.Text = "CANCELAR";
+            this.btncancelar.UseVisualStyleBackColor = false;
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
             // btnmodificar
             // 
@@ -81,7 +82,7 @@ namespace P1_Vacunaton_21811039
             this.btnmodificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnmodificar.Location = new System.Drawing.Point(47, 411);
             this.btnmodificar.Name = "btnmodificar";
-            this.btnmodificar.Size = new System.Drawing.Size(256, 86);
+            this.btnmodificar.Size = new System.Drawing.Size(256, 63);
             this.btnmodificar.TabIndex = 89;
             this.btnmodificar.Text = "MODIFICAR";
             this.btnmodificar.UseVisualStyleBackColor = false;
@@ -317,7 +318,7 @@ namespace P1_Vacunaton_21811039
             this.Controls.Add(this.btnAgregarenfermedad);
             this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.dpfechanec);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.btnmodificar);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -345,7 +346,7 @@ namespace P1_Vacunaton_21811039
 
         #endregion
         private System.Windows.Forms.DateTimePicker dpfechanec;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btncancelar;
         private System.Windows.Forms.Button btnmodificar;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;

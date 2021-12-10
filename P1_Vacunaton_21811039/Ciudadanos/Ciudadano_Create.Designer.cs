@@ -29,7 +29,7 @@ namespace P1_Vacunaton_21811039
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
+            this.btncancelar = new System.Windows.Forms.Button();
             this.btncrear = new System.Windows.Forms.Button();
             this.cbEstadocivil = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -54,16 +54,17 @@ namespace P1_Vacunaton_21811039
             this.lvEnfermedades = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
-            // button2
+            // btncancelar
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(-3, 556);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 38);
-            this.button2.TabIndex = 64;
-            this.button2.Text = "CANCELAR";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btncancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btncancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncancelar.Location = new System.Drawing.Point(47, 473);
+            this.btncancelar.Name = "btncancelar";
+            this.btncancelar.Size = new System.Drawing.Size(256, 38);
+            this.btncancelar.TabIndex = 64;
+            this.btncancelar.Text = "CANCELAR";
+            this.btncancelar.UseVisualStyleBackColor = false;
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
             // btncrear
             // 
@@ -71,7 +72,7 @@ namespace P1_Vacunaton_21811039
             this.btncrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncrear.Location = new System.Drawing.Point(47, 411);
             this.btncrear.Name = "btncrear";
-            this.btncrear.Size = new System.Drawing.Size(256, 86);
+            this.btncrear.Size = new System.Drawing.Size(256, 56);
             this.btncrear.TabIndex = 63;
             this.btncrear.Text = "CREAR";
             this.btncrear.UseVisualStyleBackColor = false;
@@ -304,7 +305,7 @@ namespace P1_Vacunaton_21811039
             this.Controls.Add(this.label10);
             this.Controls.Add(this.btnAgregarenfermedad);
             this.Controls.Add(this.dpFechanacimiento);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.btncrear);
             this.Controls.Add(this.cbEstadocivil);
             this.Controls.Add(this.label9);
@@ -332,7 +333,7 @@ namespace P1_Vacunaton_21811039
         }
 
         #endregion
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btncancelar;
         private System.Windows.Forms.Button btncrear;
         private System.Windows.Forms.ComboBox cbEstadocivil;
         private System.Windows.Forms.Label label9;
