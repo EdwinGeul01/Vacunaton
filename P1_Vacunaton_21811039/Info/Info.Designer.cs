@@ -29,12 +29,11 @@ namespace P1_Vacunaton_21811039
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Info));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnsalir = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbd = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -88,25 +87,25 @@ namespace P1_Vacunaton_21811039
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.txtbd);
             this.panel3.Location = new System.Drawing.Point(34, 349);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(913, 240);
             this.panel3.TabIndex = 7;
             // 
-            // textBox1
+            // txtbd
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(8)))), ((int)(((byte)(0)))));
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(911, 238);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = resources.GetString("textBox1.Text");
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtbd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(8)))), ((int)(((byte)(0)))));
+            this.txtbd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtbd.ForeColor = System.Drawing.Color.White;
+            this.txtbd.Location = new System.Drawing.Point(0, 0);
+            this.txtbd.Multiline = true;
+            this.txtbd.Name = "txtbd";
+            this.txtbd.ReadOnly = true;
+            this.txtbd.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtbd.Size = new System.Drawing.Size(911, 238);
+            this.txtbd.TabIndex = 0;
+            this.txtbd.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label7
             // 
@@ -234,7 +233,7 @@ namespace P1_Vacunaton_21811039
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtbd;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnsalir;

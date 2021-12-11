@@ -19,10 +19,15 @@ namespace P1_Vacunaton_21811039
 
         private void Report_Ciudadanos_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'VacunatonDataSet.EnfermedadesXCiudadanos' Puede moverla o quitarla según sea necesario.
+            this.EnfermedadesXCiudadanosTableAdapter.Fill(this.VacunatonDataSet.EnfermedadesXCiudadanos);
+            // TODO: esta línea de código carga datos en la tabla 'VacunatonDataSet.EnfermedadesBases' Puede moverla o quitarla según sea necesario.
+            this.EnfermedadesBasesTableAdapter.Fill(this.VacunatonDataSet.EnfermedadesBases);
             // TODO: esta línea de código carga datos en la tabla 'VacunatonDataSet.Ciudadanos' Puede moverla o quitarla según sea necesario.
             this.CiudadanosTableAdapter.Fill(this.VacunatonDataSet.Ciudadanos);
 
             this.reportViewer1.RefreshReport();
+            this.reportViewer2.RefreshReport();
         }
 
         private void cbidname_CheckedChanged(object sender, EventArgs e)
@@ -36,13 +41,34 @@ namespace P1_Vacunaton_21811039
             {
                 this.CiudadanosTableAdapter.FillBy(this.VacunatonDataSet.Ciudadanos,txtinfo.Text);
                 this.reportViewer1.RefreshReport();
+
+                this.EnfermedadesXCiudadanosTableAdapter.FillBy(this.VacunatonDataSet.EnfermedadesXCiudadanos, txtinfo.Text);
+                this.reportViewer2.RefreshReport();
             }
             else
             {
 
                 this.CiudadanosTableAdapter.Fill(this.VacunatonDataSet.Ciudadanos);
                 this.reportViewer1.RefreshReport();
+
+
+
+                this.EnfermedadesXCiudadanosTableAdapter.Fill(this.VacunatonDataSet.EnfermedadesXCiudadanos);
+                this.reportViewer2.RefreshReport();
+
             }
+
+
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            panel3.Enabled = !panel3.Enabled;
+            panel3.Visible = !panel3.Visible;
+            panel2.Enabled = !panel2.Enabled;
+            panel2.Visible = !panel2.Visible;
+        }
+
+       
     }
 }

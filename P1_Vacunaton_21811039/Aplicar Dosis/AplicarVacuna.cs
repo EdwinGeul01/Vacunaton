@@ -43,30 +43,64 @@ namespace P1_Vacunaton_21811039
 
         }
 
+
+        private VacunaXCiudadanos GetLast(List<VacunaXCiudadanos> nl)
+        {
+            VacunaXCiudadanos temp;
+
+            temp = nl[0];
+                
+                for(int j = 0; j < nl.Count();j++ )
+                {
+
+                    if (nl[j].NumeroDosis >= temp.NumeroDosis )
+                    {
+                    temp = nl[j];
+                    }
+
+
+                }
+            return temp;
+
+        }
+
         private void btnbuscar_Click(object sender, EventArgs e)
         {
-             VxC = cn.GetVacunasXCiudadanos4id(txtcod.Text);
-            Ciudadano = cn.GetCiudadano(txtcod.Text);
-
-            if(Ciudadano == null)
+            try
             {
-                MessageBox.Show("no se encontro al ciudadano!!");
-                return;
+
+
+
+                List<VacunaXCiudadanos> listvxc = cn.GetVacunasXCiudadanos4id(txtcod.Text);
+                Ciudadano = cn.GetCiudadano(txtcod.Text);
+
+                if (Ciudadano == null)
+                {
+                    MessageBox.Show("no se encontro al ciudadano!!");
+                    return;
+                }
+
+                btnaplicar.Enabled = true;
+
+                if (listvxc == null)
+                {
+                    txtndosis.Text = "1";
+                    return;
+
+                }
+
+                VxC = GetLast(listvxc);
+
+                txtndosis.Text = (Convert.ToInt32(VxC.NumeroDosis) + 1).ToString();
+
+
+
+
             }
-
-            btnaplicar.Enabled = true;
-
-            if(VxC == null)
+            catch (Exception err)
             {
-                txtndosis.Text  = "1";
-                return;
-
+                MessageBox.Show(err.Message);
             }
-
-            
-            txtndosis.Text = (Convert.ToInt32(VxC.NumeroDosis) + 1).ToString();
-            
-            
 
         }
 

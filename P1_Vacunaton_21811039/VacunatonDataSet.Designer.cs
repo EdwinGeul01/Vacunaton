@@ -5567,8 +5567,8 @@ SELECT IdCiudadano, nombreCompleto, fechaNacimiento, edad, genero, telefono, dir
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
             this._commandCollection[1].CommandText = "SELECT IdCiudadano, nombreCompleto, fechaNacimiento, edad, genero, telefono, dire" +
-                "ccion, estadoCivil FROM dbo.Ciudadanos\r\nwhere IdCiudadano = @id or nombreComplet" +
-                "o like \'%\' + @id  + \'%\'";
+                "ccion, estadoCivil FROM dbo.Ciudadanos\r\nwhere IdCiudadano like \'%\' + @id + \'%\' o" +
+                "r nombreCompleto like \'%\' + @id  + \'%\'";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.VarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, "IdCiudadano", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -6520,11 +6520,17 @@ SELECT IdEnfermedad, IdCiudadano FROM EnfermedadesXCiudadanos WHERE (IdCiudadano
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT IdEnfermedad, IdCiudadano FROM dbo.EnfermedadesXCiudadanos";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT IdEnfermedad, IdCiudadano FROM dbo.EnfermedadesXCiudadanos\r\nwhere IdCiudad" +
+                "ano like \'%\' + @id  + \'%\'";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.VarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, "IdCiudadano", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6549,6 +6555,25 @@ SELECT IdEnfermedad, IdCiudadano FROM EnfermedadesXCiudadanos WHERE (IdCiudadano
             VacunatonDataSet.EnfermedadesXCiudadanosDataTable dataTable = new VacunatonDataSet.EnfermedadesXCiudadanosDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy(VacunatonDataSet.EnfermedadesXCiudadanosDataTable dataTable, string id) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((id == null)) {
+                throw new global::System.ArgumentNullException("id");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(id));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

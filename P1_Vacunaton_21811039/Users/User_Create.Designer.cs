@@ -303,9 +303,9 @@ namespace P1_Vacunaton_21811039
             // 
             this.btncreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btncreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncreate.Location = new System.Drawing.Point(473, 452);
+            this.btncreate.Location = new System.Drawing.Point(48, 408);
             this.btncreate.Name = "btncreate";
-            this.btncreate.Size = new System.Drawing.Size(256, 38);
+            this.btncreate.Size = new System.Drawing.Size(256, 68);
             this.btncreate.TabIndex = 36;
             this.btncreate.Text = "CREAR";
             this.btncreate.UseVisualStyleBackColor = false;
@@ -315,9 +315,9 @@ namespace P1_Vacunaton_21811039
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(48, 452);
+            this.button2.Location = new System.Drawing.Point(48, 482);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 38);
+            this.button2.Size = new System.Drawing.Size(256, 38);
             this.button2.TabIndex = 37;
             this.button2.Text = "CANCELAR";
             this.button2.UseVisualStyleBackColor = false;

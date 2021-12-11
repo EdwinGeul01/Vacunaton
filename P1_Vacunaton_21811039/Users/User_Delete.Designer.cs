@@ -74,9 +74,9 @@ namespace P1_Vacunaton_21811039
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(50, 467);
+            this.button2.Location = new System.Drawing.Point(50, 482);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 38);
+            this.button2.Size = new System.Drawing.Size(256, 38);
             this.button2.TabIndex = 92;
             this.button2.Text = "CANCELAR";
             this.button2.UseVisualStyleBackColor = false;
@@ -87,9 +87,9 @@ namespace P1_Vacunaton_21811039
             this.btneliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btneliminar.Enabled = false;
             this.btneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btneliminar.Location = new System.Drawing.Point(451, 419);
+            this.btneliminar.Location = new System.Drawing.Point(50, 408);
             this.btneliminar.Name = "btneliminar";
-            this.btneliminar.Size = new System.Drawing.Size(256, 86);
+            this.btneliminar.Size = new System.Drawing.Size(256, 68);
             this.btneliminar.TabIndex = 91;
             this.btneliminar.Text = "ELIMINAR";
             this.btneliminar.UseVisualStyleBackColor = false;

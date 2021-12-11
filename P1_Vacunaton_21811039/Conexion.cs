@@ -113,7 +113,7 @@ namespace P1_Vacunaton_21811039
             {
                 if (u.CodVacuna == vacuna.CodVacuna)
                 {
-                    u.CodVacuna = null;
+                    u.Vacunas = null;
                 }
             }
 
@@ -510,12 +510,12 @@ namespace P1_Vacunaton_21811039
 
         //vacunas por ciudadanos
 
-        public VacunaXCiudadanos GetVacunasXCiudadanos4id(string code)
+        public List<VacunaXCiudadanos> GetVacunasXCiudadanos4id(string code)
         {
             var result = db.VacunaXCiudadanos.Where(e => e.IdCiudadano == code);
             if (result.Count() == 0) { return null; }
 
-            return result.ToList().Last();
+            return result.ToList();
 
 
         }

@@ -351,6 +351,7 @@
     <EmbeddedResource Include="Consultas\Report_Ciudadanos.resx">
       <DependentUpon>Report_Ciudadanos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Report_CiudadanosXEnfermedades.rdlc" />
     <EmbeddedResource Include="Consultas\Report_Enfermedades.rdlc" />
     <EmbeddedResource Include="Consultas\Report_Enfermedades.resx">
       <DependentUpon>Report_Enfermedades.cs</DependentUpon>
