@@ -205,6 +205,12 @@
     <Compile Include="Auxiliar\Options_Menu.Designer.cs">
       <DependentUpon>Options_Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Info\Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info\Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -374,6 +380,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Enfermedades\Enfermedad_Create.resx">
       <DependentUpon>Enfermedad_Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info\Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

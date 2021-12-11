@@ -66,5 +66,11 @@ namespace P1_Vacunaton_21811039
             SignUp_.StartPosition = FormStartPosition.CenterScreen;
             SignUp_.Show();
         }
+
+        private void btninfo_Click(object sender, EventArgs e)
+        {
+            Info INFOR = new Info();
+            INFOR.Show();
+        }
     }
 }

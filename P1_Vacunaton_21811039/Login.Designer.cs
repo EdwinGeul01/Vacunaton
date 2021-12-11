@@ -41,6 +41,7 @@ namespace P1_Vacunaton_21811039
             this.btnSignUp = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.btninfo = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -175,6 +176,7 @@ namespace P1_Vacunaton_21811039
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btninfo);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.btnSignUp);
             this.panel1.Controls.Add(this.label4);
@@ -190,6 +192,22 @@ namespace P1_Vacunaton_21811039
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(157, 172);
             this.label3.TabIndex = 7;
+            // 
+            // btninfo
+            // 
+            this.btninfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(21)))));
+            this.btninfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btninfo.FlatAppearance.BorderSize = 0;
+            this.btninfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(65)))));
+            this.btninfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btninfo.ForeColor = System.Drawing.Color.Honeydew;
+            this.btninfo.Location = new System.Drawing.Point(14, 271);
+            this.btninfo.Name = "btninfo";
+            this.btninfo.Size = new System.Drawing.Size(154, 22);
+            this.btninfo.TabIndex = 14;
+            this.btninfo.Text = "INFORMACION";
+            this.btninfo.UseVisualStyleBackColor = false;
+            this.btninfo.Click += new System.EventHandler(this.btninfo_Click);
             // 
             // Login
             // 
@@ -231,6 +249,7 @@ namespace P1_Vacunaton_21811039
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnSignUp;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btninfo;
     }
 }
 

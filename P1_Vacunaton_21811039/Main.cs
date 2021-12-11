@@ -114,5 +114,11 @@ namespace P1_Vacunaton_21811039
 
             this.Close();
         }
+
+        private void btninfo_Click(object sender, EventArgs e)
+        {
+            Info infor = new Info();
+            infor.Show();
+        }
     }
 }

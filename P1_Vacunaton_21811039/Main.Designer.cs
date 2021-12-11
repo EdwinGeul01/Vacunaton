@@ -38,7 +38,7 @@ namespace P1_Vacunaton_21811039
             this.label3 = new System.Windows.Forms.Label();
             this.lblnombre = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btninfo = new System.Windows.Forms.Button();
             this.panel_user.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,10 +77,10 @@ namespace P1_Vacunaton_21811039
             // 
             this.panel_user.BackColor = System.Drawing.Color.PaleTurquoise;
             this.panel_user.BackgroundImage = global::P1_Vacunaton_21811039.Properties.Resources.user_panel;
+            this.panel_user.Controls.Add(this.btninfo);
             this.panel_user.Controls.Add(this.lbltipodeuser);
             this.panel_user.Controls.Add(this.btngohome);
             this.panel_user.Controls.Add(this.btnsalir);
-            this.panel_user.Controls.Add(this.button6);
             this.panel_user.Controls.Add(this.label3);
             this.panel_user.Controls.Add(this.lblnombre);
             this.panel_user.Controls.Add(this.label1);
@@ -108,12 +108,12 @@ namespace P1_Vacunaton_21811039
             this.btngohome.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.btngohome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btngohome.FlatAppearance.BorderSize = 0;
-            this.btngohome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGreen;
+            this.btngohome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(217)))), ((int)(((byte)(129)))));
             this.btngohome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btngohome.ForeColor = System.Drawing.Color.Honeydew;
-            this.btngohome.Location = new System.Drawing.Point(0, 274);
+            this.btngohome.Location = new System.Drawing.Point(12, 247);
             this.btngohome.Name = "btngohome";
-            this.btngohome.Size = new System.Drawing.Size(190, 37);
+            this.btngohome.Size = new System.Drawing.Size(170, 37);
             this.btngohome.TabIndex = 7;
             this.btngohome.Text = "MENU";
             this.btngohome.UseVisualStyleBackColor = false;
@@ -125,7 +125,7 @@ namespace P1_Vacunaton_21811039
             this.btnsalir.FlatAppearance.BorderSize = 0;
             this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsalir.ForeColor = System.Drawing.Color.White;
-            this.btnsalir.Location = new System.Drawing.Point(-1, 513);
+            this.btnsalir.Location = new System.Drawing.Point(31, 520);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(131, 42);
             this.btnsalir.TabIndex = 6;
@@ -166,21 +166,21 @@ namespace P1_Vacunaton_21811039
             this.label1.Size = new System.Drawing.Size(109, 104);
             this.label1.TabIndex = 1;
             // 
-            // button6
+            // btninfo
             // 
-            this.button6.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.button6.Location = new System.Drawing.Point(-1, 327);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(191, 36);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "OPCIONES PERFIL";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btninfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(21)))));
+            this.btninfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btninfo.FlatAppearance.BorderSize = 0;
+            this.btninfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(65)))));
+            this.btninfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btninfo.ForeColor = System.Drawing.Color.Honeydew;
+            this.btninfo.Location = new System.Drawing.Point(12, 302);
+            this.btninfo.Name = "btninfo";
+            this.btninfo.Size = new System.Drawing.Size(170, 37);
+            this.btninfo.TabIndex = 9;
+            this.btninfo.Text = "INFORMACION";
+            this.btninfo.UseVisualStyleBackColor = false;
+            this.btninfo.Click += new System.EventHandler(this.btninfo_Click);
             // 
             // Main
             // 
@@ -217,6 +217,6 @@ namespace P1_Vacunaton_21811039
         private System.Windows.Forms.Label lbltipodeuser;
         private System.Windows.Forms.Label lblnombre;
         public System.Windows.Forms.Panel MainBar;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btninfo;
     }
 }
