@@ -72,6 +72,7 @@ namespace P1_Vacunaton_21811039
             this.btnsalir.TabIndex = 9;
             this.btnsalir.Text = "SALIR";
             this.btnsalir.UseVisualStyleBackColor = true;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
             // label8
             // 

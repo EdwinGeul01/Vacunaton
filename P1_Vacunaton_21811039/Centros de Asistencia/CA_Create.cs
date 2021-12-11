@@ -22,7 +22,11 @@ namespace P1_Vacunaton_21811039
 
         private void btncrear_Click(object sender, EventArgs e)
         {
-
+            if (txtid.Text == "")
+            {
+                MessageBox.Show("id no puede ser nulo!");
+                return;
+            }
             try
             {
                 cn.CrearCentroAsistencia(

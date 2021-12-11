@@ -24,6 +24,13 @@ namespace P1_Vacunaton_21811039
 
         private void btncrear_Click(object sender, EventArgs e)
         {
+
+            if (txtcod.Text == "")
+            {
+                MessageBox.Show("Codigo no puede ser nulo!");
+                return;
+            }
+
             try
             {
                 cn.CrearVacuna(

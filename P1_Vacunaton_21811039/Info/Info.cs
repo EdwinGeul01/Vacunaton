@@ -26,5 +26,10 @@ namespace P1_Vacunaton_21811039
         {
 
         }
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
