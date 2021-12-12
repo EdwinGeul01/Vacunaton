@@ -144,6 +144,7 @@ namespace P1_Vacunaton_21811039
             this.Controls.Add(this.panel1);
             this.Name = "Report_Vacunas";
             this.Text = "Report_Vacunas";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Report_Vacunas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.VacunasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VacunatonDataSet)).EndInit();

@@ -391,6 +391,8 @@ namespace P1_Vacunaton_21811039
 
             db.SaveChanges();
 
+
+            ciu.EnfermedadesBases.Clear();
             for (int i = 0; i < Enfermedades.Count; i++)
             {
                 EstablecerCiudXEnf(id, Enfermedades[i]);
@@ -493,6 +495,7 @@ namespace P1_Vacunaton_21811039
 
         public void EstablecerCiudXEnf(string ciud_cod, string enfer_name)
         {
+            
             Ciudadanos ciu = GetCiudadano(ciud_cod);
             EnfermedadesBases enf = GetEnfermedad4name(enfer_name);
 

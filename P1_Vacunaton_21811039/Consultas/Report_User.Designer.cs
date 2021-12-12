@@ -32,24 +32,39 @@ namespace P1_Vacunaton_21811039
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.UsuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.VacunatonDataSet = new P1_Vacunaton_21811039.VacunatonDataSet();
             this.rolesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.UsuarioTableAdapter = new P1_Vacunaton_21811039.VacunatonDataSetTableAdapters.UsuarioTableAdapter();
             this.rolesTableAdapter = new P1_Vacunaton_21811039.VacunatonDataSetTableAdapters.rolesTableAdapter();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UsuarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.VacunatonDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rolesBindingSource)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // UsuarioBindingSource
+            // 
+            this.UsuarioBindingSource.DataMember = "Usuario";
+            this.UsuarioBindingSource.DataSource = this.VacunatonDataSet;
+            // 
+            // VacunatonDataSet
+            // 
+            this.VacunatonDataSet.DataSetName = "VacunatonDataSet";
+            this.VacunatonDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // rolesBindingSource
+            // 
+            this.rolesBindingSource.DataMember = "roles";
+            this.rolesBindingSource.DataSource = this.VacunatonDataSet;
             // 
             // button1
             // 
@@ -81,14 +96,15 @@ namespace P1_Vacunaton_21811039
             this.panel1.Size = new System.Drawing.Size(796, 65);
             this.panel1.TabIndex = 4;
             // 
-            // panel2
+            // label1
             // 
-            this.panel2.Controls.Add(this.reportViewer1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 65);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(796, 551);
-            this.panel2.TabIndex = 5;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(240, 29);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "REPORTE DE USUARIOS";
             // 
             // checkBox1
             // 
@@ -101,15 +117,14 @@ namespace P1_Vacunaton_21811039
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // label1
+            // panel2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(240, 29);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "REPORTE DE USUARIOS";
+            this.panel2.Controls.Add(this.reportViewer1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 65);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(796, 551);
+            this.panel2.TabIndex = 5;
             // 
             // reportViewer1
             // 
@@ -128,21 +143,6 @@ namespace P1_Vacunaton_21811039
             this.reportViewer1.Size = new System.Drawing.Size(796, 551);
             this.reportViewer1.TabIndex = 0;
             // 
-            // UsuarioBindingSource
-            // 
-            this.UsuarioBindingSource.DataMember = "Usuario";
-            this.UsuarioBindingSource.DataSource = this.VacunatonDataSet;
-            // 
-            // VacunatonDataSet
-            // 
-            this.VacunatonDataSet.DataSetName = "VacunatonDataSet";
-            this.VacunatonDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // rolesBindingSource
-            // 
-            this.rolesBindingSource.DataMember = "roles";
-            this.rolesBindingSource.DataSource = this.VacunatonDataSet;
-            // 
             // UsuarioTableAdapter
             // 
             this.UsuarioTableAdapter.ClearBeforeFill = true;
@@ -160,13 +160,14 @@ namespace P1_Vacunaton_21811039
             this.Controls.Add(this.panel1);
             this.Name = "Report_User";
             this.Text = "Report_User";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Report_User_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.UsuarioBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VacunatonDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rolesBindingSource)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

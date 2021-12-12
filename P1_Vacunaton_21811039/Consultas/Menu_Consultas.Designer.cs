@@ -39,11 +39,11 @@ namespace P1_Vacunaton_21811039
             this.btnPerVac = new System.Windows.Forms.Button();
             this.btnreturnmenu = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelimagesection = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.btnporDosis = new System.Windows.Forms.Button();
             this.btnporfecha = new System.Windows.Forms.Button();
             this.btnporciudadanos = new System.Windows.Forms.Button();
+            this.panelimagesection = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -229,27 +229,6 @@ namespace P1_Vacunaton_21811039
             this.flowLayoutPanel2.Size = new System.Drawing.Size(688, 404);
             this.flowLayoutPanel2.TabIndex = 20;
             // 
-            // panelimagesection
-            // 
-            this.panelimagesection.BackgroundImage = global::P1_Vacunaton_21811039.Properties.Resources.consultaR_white;
-            this.panelimagesection.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelimagesection.Location = new System.Drawing.Point(12, 541);
-            this.panelimagesection.Name = "panelimagesection";
-            this.panelimagesection.Size = new System.Drawing.Size(39, 31);
-            this.panelimagesection.TabIndex = 18;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Image = global::P1_Vacunaton_21811039.Properties.Resources.logoname;
-            this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label7.Location = new System.Drawing.Point(-6, -1);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(782, 47);
-            this.label7.TabIndex = 15;
-            // 
             // btnporDosis
             // 
             this.btnporDosis.BackColor = System.Drawing.Color.White;
@@ -319,6 +298,27 @@ namespace P1_Vacunaton_21811039
             this.btnporciudadanos.Visible = false;
             this.btnporciudadanos.Click += new System.EventHandler(this.btnporciudadanos_Click);
             // 
+            // panelimagesection
+            // 
+            this.panelimagesection.BackgroundImage = global::P1_Vacunaton_21811039.Properties.Resources.consultaR_white;
+            this.panelimagesection.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelimagesection.Location = new System.Drawing.Point(12, 541);
+            this.panelimagesection.Name = "panelimagesection";
+            this.panelimagesection.Size = new System.Drawing.Size(39, 31);
+            this.panelimagesection.TabIndex = 18;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label7.Image = global::P1_Vacunaton_21811039.Properties.Resources.logoname;
+            this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label7.Location = new System.Drawing.Point(-6, -1);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(782, 47);
+            this.label7.TabIndex = 15;
+            // 
             // Menu_Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -334,6 +334,7 @@ namespace P1_Vacunaton_21811039
             this.Name = "Menu_Consultas";
             this.Text = "Menu_Consultas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Menu_Consultas_Load);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 

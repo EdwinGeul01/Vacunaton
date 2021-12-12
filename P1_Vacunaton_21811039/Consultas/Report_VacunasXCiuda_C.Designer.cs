@@ -30,10 +30,10 @@ namespace P1_Vacunaton_21811039
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource13 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource14 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource15 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource16 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.VacunaXCiudadanosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.VacunatonDataSet = new P1_Vacunaton_21811039.VacunatonDataSet();
             this.CiudadanosBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -210,18 +210,18 @@ namespace P1_Vacunaton_21811039
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource13.Name = "VxCiudadano";
-            reportDataSource13.Value = this.VacunaXCiudadanosBindingSource;
-            reportDataSource14.Name = "Ciudadanos";
-            reportDataSource14.Value = this.CiudadanosBindingSource;
-            reportDataSource15.Name = "Vacunas";
-            reportDataSource15.Value = this.VacunasBindingSource;
-            reportDataSource16.Name = "CentrodeA";
-            reportDataSource16.Value = this.CentroAsistenciaBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource13);
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource14);
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource15);
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource16);
+            reportDataSource1.Name = "VxCiudadano";
+            reportDataSource1.Value = this.VacunaXCiudadanosBindingSource;
+            reportDataSource2.Name = "Ciudadanos";
+            reportDataSource2.Value = this.CiudadanosBindingSource;
+            reportDataSource3.Name = "Vacunas";
+            reportDataSource3.Value = this.VacunasBindingSource;
+            reportDataSource4.Name = "CentrodeA";
+            reportDataSource4.Value = this.CentroAsistenciaBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource3);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource4);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "P1_Vacunaton_21811039.Consultas.VacunasXCiudadanos_C.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
@@ -254,6 +254,7 @@ namespace P1_Vacunaton_21811039
             this.Controls.Add(this.panel1);
             this.Name = "Report_VacunasXCiuda_C";
             this.Text = "Report_VacunasXCiuda_C";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Report_VacunasXCiuda_C_Load);
             ((System.ComponentModel.ISupportInitialize)(this.VacunaXCiudadanosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VacunatonDataSet)).EndInit();

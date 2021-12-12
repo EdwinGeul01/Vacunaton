@@ -30,17 +30,17 @@ namespace P1_Vacunaton_21811039
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource5 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.EnfermedadesBasesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.VacunatonDataSet = new P1_Vacunaton_21811039.VacunatonDataSet();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbidname = new System.Windows.Forms.CheckBox();
+            this.txtinfo = new System.Windows.Forms.TextBox();
+            this.btnbuscar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.EnfermedadesBasesTableAdapter = new P1_Vacunaton_21811039.VacunatonDataSetTableAdapters.EnfermedadesBasesTableAdapter();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cbidname = new System.Windows.Forms.CheckBox();
-            this.btnbuscar = new System.Windows.Forms.Button();
-            this.txtinfo = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.EnfermedadesBasesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.VacunatonDataSet)).BeginInit();
             this.panel1.SuspendLayout();
@@ -69,32 +69,6 @@ namespace P1_Vacunaton_21811039
             this.panel1.Size = new System.Drawing.Size(800, 100);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.reportViewer1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 100);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 350);
-            this.panel2.TabIndex = 1;
-            // 
-            // reportViewer1
-            // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource5.Name = "DataEnfermedades";
-            reportDataSource5.Value = this.EnfermedadesBasesBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource5);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "P1_Vacunaton_21811039.Consultas.Report_Enfermedades.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(800, 350);
-            this.reportViewer1.TabIndex = 0;
-            // 
-            // EnfermedadesBasesTableAdapter
-            // 
-            this.EnfermedadesBasesTableAdapter.ClearBeforeFill = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -117,6 +91,14 @@ namespace P1_Vacunaton_21811039
             this.cbidname.UseVisualStyleBackColor = true;
             this.cbidname.CheckedChanged += new System.EventHandler(this.cbidname_CheckedChanged);
             // 
+            // txtinfo
+            // 
+            this.txtinfo.Enabled = false;
+            this.txtinfo.Location = new System.Drawing.Point(452, 54);
+            this.txtinfo.Name = "txtinfo";
+            this.txtinfo.Size = new System.Drawing.Size(178, 20);
+            this.txtinfo.TabIndex = 14;
+            // 
             // btnbuscar
             // 
             this.btnbuscar.Location = new System.Drawing.Point(636, 52);
@@ -127,13 +109,31 @@ namespace P1_Vacunaton_21811039
             this.btnbuscar.UseVisualStyleBackColor = true;
             this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
-            // txtinfo
+            // panel2
             // 
-            this.txtinfo.Enabled = false;
-            this.txtinfo.Location = new System.Drawing.Point(452, 54);
-            this.txtinfo.Name = "txtinfo";
-            this.txtinfo.Size = new System.Drawing.Size(178, 20);
-            this.txtinfo.TabIndex = 14;
+            this.panel2.Controls.Add(this.reportViewer1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 100);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(800, 350);
+            this.panel2.TabIndex = 1;
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "DataEnfermedades";
+            reportDataSource1.Value = this.EnfermedadesBasesBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "P1_Vacunaton_21811039.Consultas.Report_Enfermedades.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(800, 350);
+            this.reportViewer1.TabIndex = 0;
+            // 
+            // EnfermedadesBasesTableAdapter
+            // 
+            this.EnfermedadesBasesTableAdapter.ClearBeforeFill = true;
             // 
             // Report_Enfermedades
             // 
@@ -144,6 +144,7 @@ namespace P1_Vacunaton_21811039
             this.Controls.Add(this.panel1);
             this.Name = "Report_Enfermedades";
             this.Text = "Report_Enfermedades";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Report_Enfermedades_Load);
             ((System.ComponentModel.ISupportInitialize)(this.EnfermedadesBasesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VacunatonDataSet)).EndInit();

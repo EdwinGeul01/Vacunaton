@@ -215,6 +215,7 @@ namespace P1_Vacunaton_21811039
             this.Name = "Report_Ciudadanos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Report_Ciudadanos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Report_Ciudadanos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CiudadanosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VacunatonDataSet)).EndInit();

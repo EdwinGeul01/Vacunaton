@@ -26,8 +26,6 @@ namespace P1_Vacunaton_21811039
             {
                 btnuser.Enabled = false;
                 btnuser.Visible = false;
-                btnPerVac.Enabled = false;
-                btnPerVac.Visible = false;
                 btnConCiud.Enabled = false;
                 btnConCiud.Visible = false;
             }
@@ -124,6 +122,11 @@ namespace P1_Vacunaton_21811039
         {
             Report_VacunasXCiuda_C rc = new Report_VacunasXCiuda_C();
             rc.Show();
+        }
+
+        private void Menu_Consultas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
