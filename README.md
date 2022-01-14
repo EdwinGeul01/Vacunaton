@@ -7,4 +7,5 @@ $ Entity Framework
 $ Sql Server
 ```
 
-
+###Notes
+> modify app.config file with the database connection path
