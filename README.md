@@ -1,9 +1,9 @@
 # Vacunaton ( dose application system ) 
 
-#technologies used
+Some technologies used : 
 ...
 $ Net Core Framework
 $ Entity Framework
 $ Sql Server
 ...
------------------------------------------------------------------------
+
